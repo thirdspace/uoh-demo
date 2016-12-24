@@ -4,13 +4,14 @@ import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import Layout from './components/Layout';
 import IndexPage from './components/IndexPage';
-import AthletePage from './components/AthletePage';
+import CreatejdModule from './components/CreatejdModule';
+import MyPoolContent from './components/MyPoolContent';
 import NotFoundPage from './components/NotFoundPage';
 
 const routes = (
   <Route path="/" component={Layout}>
-    <IndexRoute component={IndexPage}/>
-    <Route path="athlete/:id" component={AthletePage}/>
+    <IndexRoute component={MyPoolContent}/>
+    <Route path="/createjd" component={CreatejdModule}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );

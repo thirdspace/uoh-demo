@@ -19,11 +19,7 @@ export default class Layout extends React.Component {
 
         <Sidebar />
         
-        <div className="app-content">
-
-        	<MyPoolContent />
-
-        </div>
+        <div className="app-content">{this.props.children} </div>
 
         <Footer />
 
