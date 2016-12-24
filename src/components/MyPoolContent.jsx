@@ -42,7 +42,7 @@ var MyPoolContent = React.createClass({
                         <p>Please create a new job description to get started</p>
 
                         <div className="btn-group">
-                          <Link id="new-jd-alt" ref="#" className="btn basic-btn ats-icon">
+                          <Link to="/CreatejdModule" id="new-jd-alt" ref="#" className="btn basic-btn ats-icon">
                           <img src="/img/icons/icon-more-info.png" width="20" height="20" />
                           New JD360</Link>
                         </div>

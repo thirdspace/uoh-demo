@@ -2700,6 +2700,9 @@ button.transparent-white:hover {
 /********************************************************************************
 								SIDEBAR
 ********************************************************************************/
+#sidebar_left {
+  max-height: 600px;
+}
 body.sb-l-m #sidebar_left {
   height: auto;
   min-height: 500px;
