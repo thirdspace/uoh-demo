@@ -1,0 +1,151 @@
+/* Black & White */
+@white: #FFFFFF;
+
+@black: #000000;
+@white-10: fade(@white, 10%);
+@white-20: fade(@white, 20%);
+@white-40: fade(@white, 40%);
+@white-60: fade(@white, 60%);
+@white-70: fade(@white, 70%);
+@white-75: fade(@white, 75%);
+@white-80: fade(@white, 80%);
+@white-90: fade(@white, 90%);
+@black-40: fade(@black, 40%);
+@black-50: fade(@black, 50%);
+@black-60: fade(@black, 60%);
+@black-70: fade(@black, 70%);
+@black-80: fade(@black, 80%);
+@black-90: fade(@black, 90%);
+
+@footer-blue: #2d3243;
+@new-yellow: #e9ce58;
+@new-yellow-80: fade(@new-yellow, 80%);
+
+
+/* Greys */
+@dark-grey-lighter: #747c90;
+@sidebar-grey: #5f747a;
+@sidebar-grey-60: fade(@sidebar-grey, 60%);
+@dark-grey: #3a4551;
+@dark-grey-5: fade(@dark-grey, 5%);
+@dark-grey-10: fade(@dark-grey, 10%);
+@dark-grey-20: fade(@dark-grey, 20%);
+@dark-grey-30: fade(@dark-grey, 30%);
+@dark-grey-40: fade(@dark-grey, 40%);
+@dark-grey-60: fade(@dark-grey, 60%);
+@dark-grey-80: fade(@dark-grey, 80%);
+@dark-grey-95: fade(@dark-grey, 95%);
+
+@blue-grey-light: #e2e7e8;
+@blue-grey-dark: #6d7c7c;
+
+@flat-grey: #2a3538;
+@mid-grey: #eef1f4;
+@mid-grey2: #6d7c7c;
+@light-grey: #bcbfc1;
+@light-grey-80: fade(@light-grey, 80%);
+@light-grey-60: fade(@light-grey, 60%);
+@light-grey-50: fade(@light-grey, 50%);
+@light-grey-40: fade(@light-grey, 40%);
+@light-grey-30: fade(@light-grey, 30%);
+@light-grey-20: fade(@light-grey, 20%);
+@light-grey-10: fade(@light-grey, 10%);
+
+
+/* Brand colors */
+@brand-red: #ed5454;
+@dark-red: #c93d3d;
+@brand-red-darker: #aa2d2d;
+@yellow: #fdb203;
+@light-yellow: #f5cb6a;
+@dark-yellow: #d69807;
+@blue: #3798c0;
+@green: #7aab2b;
+@dark-green: #537916;
+@lime-green: #D3D359;
+@dark-brand-blue: #229bbf;
+@brand-blue: #35B4DA;
+@blue-80: fade(@brand-blue, 10%);
+@purple: #8b86e0;
+@aqua: #10cfbd;
+@dark-aqua: #08b3a3;
+
+@aqua-80: fade(@aqua, 80%);
+
+@yellow-80: fade(@yellow, 80%);
+
+@brand-red-80: fade(@brand-red, 80%);
+@brand-red-60: fade(@brand-red, 60%);
+
+@brand-red-50: fade(@brand-red, 50%);
+@brand-red-20: fade(@brand-red, 20%);
+
+
+@yellow-80: fade(@yellow, 80%);
+@light-yellow-50: fade(@light-yellow, 50%);
+
+@yellow-10-darken: darken(@yellow, 10%);
+@yellow-20-highlight: lighten(@yellow, 20%);
+@blue-20-highlight: lighten(@blue, 20%);
+
+
+@green-80: fade(@green, 80%);
+@green-10-darken: darken(@green, 10%);
+@green-20-highlight: lighten(@green, 20%);
+
+@lime-green-80: fade(@green, 80%);
+@lime-green-10-darken: darken(@green, 10%);
+@lime-green-20-highlight: lighten(@green, 20%);
+
+@blue-80: fade(@blue, 80%);
+
+
+@yellow-70: fade(@yellow, 70%);
+@green-70: fade(@green, 70%);
+
+
+/* CSS Classes */
+.bg-color-primary {
+	background-color: @brand-red;
+}
+
+
+/* Named class values */
+.purple {
+	color: @purple;
+}
+
+.success {
+	color: @green !important;
+}
+
+.danger {
+	color: @brand-red !important;
+}
+
+.normal {
+	color: @blue !important;
+}
+
+.note-color {
+	color: @light-grey-80;
+} 
+
+.white-80 {
+	color: rgba(255,255,255,.8);
+	font-size: 42pt;
+	padding: 10px;
+
+	&:hover {
+		color: rgba(255,255,255,.4);
+		cursor: pointer;
+	}
+}
+
+.aqua {
+	color: @aqua;
+}
+
+.white-bg {
+	background-color: rgba(255,255,255,.8);
+}
