@@ -11,7 +11,7 @@ export default class Header extends React.Component {
                    <img src="/img/logo.png" alt="" className="main-logo" />
                </a>
            </div>
-            <h3 className="page-location">MyPool</h3>
+            <h3 className="page-location">{this.props.title}</h3>
            <ul className="nav navbar-nav navbar-right">
                <li className="settings-dropdown dropdown dropdown-fuse">
                        <button className="btn bg-color-1 fs10 dropdown-toggle mln" data-toggle="dropdown">

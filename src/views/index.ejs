@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="/allcp/forms/css/forms.css">
 
+    <link rel="stylesheet" href="/css/plugins/swiper/swiper.min.css">
 
     <link rel="stylesheet" type="text/css" href="/fonts/icomoon/icomoon.css">
     <link rel="stylesheet" type="text/css" href="/fonts/icomoon-free/icomoon-free.css">
@@ -37,5 +38,268 @@
       <script src="/js/theme/demo.js"></script>
       <script src="/js/theme/main.js"></script>
       <script src="/js/plugins/allcp/allcp_forms-elements.js"></script>
+
+      <!-- Fusion Charts -->
+      <script src="/js/plugins/fusioncharts/fusioncharts.js"></script>
+      <script src="/js/plugins/fusioncharts/fusioncharts.powercharts.js"></script>
+      <script src="/js/plugins/fusioncharts/fusioncharts.theme.fint.js"></script>
+
+      <!-- Chart Initialization -->
+
+      <script>
+      FusionCharts.ready(function () {
+          var skillsChart = new FusionCharts({
+              type: 'radar',
+              renderAt: 'chart-container1',
+              width: '800',
+              height: '500',
+              dataFormat: 'json',
+              dataSource: {
+                  "chart": {
+                      "caption": "Skills",
+                      "subCaption": "",                                                                                               
+                      "numberPreffix": "$",
+                      "theme": "carbon",
+                      "radarfillcolor": "#ffffff",
+                  },
+                  "categories": [
+                      {
+                          "category": [
+                              {
+                                  "label": "Programming Skills"
+                              }, 
+                              {
+                                  "label": "Code Organization"
+                              },
+                              {
+                                  "label": "Agile"
+                              },
+                              {
+                                  "label": "Team Management"
+                              },
+                              {
+                                  "label": "Data Management"
+                              },
+                              {
+                                  "label": "OS Knowledge"
+                              }
+
+                          ]
+                      }
+                  ],
+                  "dataset": [
+                      {
+                          "seriesname": "Required Skills",
+                          "data": [
+                              {
+                                  "value": "3"
+                              },
+                              {
+                                  "value": "3"
+                              },
+                              {
+                                  "value": "3"
+                              },
+                              {
+                                  "value": "7"
+                              },
+                              {
+                                  "value": "5"
+                              },
+                              {
+                                  "value": "8"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          }).render();
+      });
+      </script>
+
+
+      <script>
+      FusionCharts.ready(function () {
+          var competencyChart = new FusionCharts({
+              type: 'radar',
+              renderAt: 'chart-container2',
+              width: '800',
+              height: '500',
+              dataFormat: 'json',
+              dataSource: {
+                  "chart": {
+                      "caption": "Competency",
+                      "subCaption": "",                                                                                               
+                      "numberPreffix": "$",
+                      "theme": "carbon",
+                      "radarfillcolor": "#ffffff",
+                  },
+                  "categories": [
+                      {
+                          "category": [
+                              {
+                                  "label": "Communication"
+                              }, 
+                              {
+                                  "label": "Efficiency"
+                              },
+                              {
+                                  "label": "Judgement"
+                              },
+                              {
+                                  "label": "Flexibility"
+                              },
+                              {
+                                  "label": "Teamwork"
+                              },
+                              {
+                                  "label": "Initiative"
+                              }
+
+                          ]
+                      }
+                  ],
+                  "dataset": [
+                      {
+                          "seriesname": "Required Competencies",
+                          "data": [
+                              {
+                                  "value": "8"
+                              },
+                              {
+                                  "value": "6"
+                              },
+                              {
+                                  "value": "4"
+                              },
+                              {
+                                  "value": "3"
+                              },
+                              {
+                                  "value": "7"
+                              },
+                              {
+                                  "value": "5"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          }).render();
+      });
+      </script>
+
+
+        <script>
+      FusionCharts.ready(function () {
+          var behavioralChart = new FusionCharts({
+              type: 'radar',
+              renderAt: 'chart-container3',
+              width: '800',
+              height: '500',
+              dataFormat: 'json',
+              dataSource: {
+                  "chart": {
+                      "caption": "Behavioral",
+                      "subCaption": "",                                                                                               
+                      "numberPreffix": "$",
+                      "theme": "carbon",
+                      "radarfillcolor": "#ffffff",
+                  },
+                  "categories": [
+                      {
+                          "category": [
+                              {
+                                  "label": "Focused"
+                              }, 
+                              {
+                                  "label": "Leader"
+                              },
+                              {
+                                  "label": "Organized"
+                              },
+                              {
+                                  "label": "Empathy"
+                              },
+                              {
+                                  "label": "Hard Working"
+                              },
+                              {
+                                  "label": "Initiative"
+                              }
+
+                          ]
+                      }
+                  ],
+                  "dataset": [
+                      {
+                          "seriesname": "Required Behavioral profile",
+                          "data": [
+                              {
+                                  "value": "4"
+                              },
+                              {
+                                  "value": "9"
+                              },
+                              {
+                                  "value": "8"
+                              },
+                              {
+                                  "value": "7"
+                              },
+                              {
+                                  "value": "4"
+                              },
+                              {
+                                  "value": "4"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          }).render();
+      });
+      </script>
+
+
+
+       <!-- Swiper JS -->
+    <script src="/js/plugins/swiper/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper_JdSpiderCharts = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+    </script>
+
+        <script>
+    var swiper_TemplatePreview = new Swiper('.swiper-container2', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+    </script>
+  
   </body>
 </html>

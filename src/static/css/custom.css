@@ -2701,7 +2701,7 @@ button.transparent-white:hover {
 								SIDEBAR
 ********************************************************************************/
 #sidebar_left {
-  max-height: 600px;
+  max-height: 450px;
 }
 body.sb-l-m #sidebar_left {
   height: auto;
@@ -4399,7 +4399,8 @@ p.empty-message {
 /********************************************************************************
 								Bottom Nav
 ********************************************************************************/
-.bottom-nav {
+.bottom-nav,
+#bottom-nav {
   height: 80px;
   width: 100%;
   position: fixed;
@@ -4409,40 +4410,47 @@ p.empty-message {
   z-index: 100;
 }
 @media screen and (max-width: 1300px) {
-  .bottom-nav {
+  .bottom-nav,
+  #bottom-nav {
     height: 60px;
     padding: 12px;
   }
 }
 @media screen and (min-width: 1300px) {
-  .bottom-nav {
+  .bottom-nav,
+  #bottom-nav {
     height: 80px;
     padding: 20px;
   }
 }
-.bottom-nav .progress-btn {
+.bottom-nav .progress-btn,
+#bottom-nav .progress-btn {
   margin: 0 10px;
   border-radius: 25em;
   padding: 2px 40px;
   line-height: 1.9em;
   font-family: 'Gotham-Medium';
 }
-.bottom-nav .progress-btn.secondary {
+.bottom-nav .progress-btn.secondary,
+#bottom-nav .progress-btn.secondary {
   border: 2px solid rgba(188, 191, 193, 0.5);
   background-color: transparent;
   color: rgba(188, 191, 193, 0.5);
 }
-.bottom-nav .progress-btn.secondary:hover {
+.bottom-nav .progress-btn.secondary:hover,
+#bottom-nav .progress-btn.secondary:hover {
   border: 2px solid #ed5454;
   background-color: rgba(58, 69, 81, 0.8);
   color: #ed5454;
 }
-.bottom-nav .progress-btn.primary {
+.bottom-nav .progress-btn.primary,
+#bottom-nav .progress-btn.primary {
   background-color: #ed5454;
   border: 2px solid #ed5454;
   color: #ffffff;
 }
-.bottom-nav .progress-btn.primary:hover {
+.bottom-nav .progress-btn.primary:hover,
+#bottom-nav .progress-btn.primary:hover {
   background-color: #aa2d2d;
   border: 2px solid #aa2d2d;
   color: #ffffff;
@@ -5400,11 +5408,11 @@ p.empty-message {
 }
 .role360-creator .role360-slide.cause-img.cause-img1,
 .role360-creator .role360-card.cause-img.cause-img1 {
-  background-image: url('../img/role-images/cause-square1.jpg') !important;
+  background-image: url("../img/role-images/cause-square1.jpg") !important;
 }
 .role360-creator .role360-slide.role-img1 .role-img,
 .role360-creator .role360-card.role-img1 .role-img {
-  background-image: url('../img/role-images/contentCard-tech1.png') !important;
+  background-image: url("../img/role-images/contentCard-tech1.png") !important;
   background-size: auto 104%;
   height: 160px;
   width: 100%;
@@ -5570,11 +5578,10 @@ p.empty-message {
 .template-select-nav {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: auto;
   left: 40px;
-  top: 50px;
+  top: 10px;
   z-index: 5;
-  display: none;
   transition: all 0.5s ease;
 }
 @media screen and (min-width: 1300px) {
@@ -5880,9 +5887,12 @@ body.takeover-active {
 .minimized .mypool-candidate {
   display: none;
 }
+#main.my-pool {
+  overflow-y: scroll;
+}
 @media screen and (min-width: 1400px) {
   #main.my-pool {
-    min-height: 950px !important;
+    height: 100vh;
   }
 }
 .mypool-candidate-completion {
@@ -8063,7 +8073,89 @@ body #content-footer {
   padding: 20px;
 }
 /********************************************************************************
-								WATERFALL CAROUSEL
+								FUSION CHARTS
+********************************************************************************/
+.raphael-group-10-caption text,
+.raphael-group-116-caption text,
+.raphael-group-222-caption text {
+  font-size: 18pt !important;
+}
+/********************************************************************************
+								SWIPER CAROUSEL
+********************************************************************************/
+.swiper-container,
+.swiper-container2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.swiper-container.template-slider,
+.swiper-container2.template-slider {
+  margin-top: 60px;
+}
+.swiper-container.template-slider .swiper-slide,
+.swiper-container2.template-slider .swiper-slide {
+  width: 400px!important;
+  height: 420px !important;
+}
+.swiper-container.template-slider .swiper-slide img.img-responsive,
+.swiper-container2.template-slider .swiper-slide img.img-responsive {
+  position: absolute;
+  top: 0;
+}
+.swiper-container.template-slider .swiper-slide h3,
+.swiper-container2.template-slider .swiper-slide h3 {
+  width: 400px;
+  display: block;
+  position: absolute;
+  top: -80px;
+}
+.swiper-container.template-slider .swiper-slide .description,
+.swiper-container2.template-slider .swiper-slide .description {
+  width: 400px;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+}
+.swiper-container.template-slider .swiper-slide .sub-line,
+.swiper-container2.template-slider .swiper-slide .sub-line {
+  width: 400px;
+  display: block;
+  position: absolute;
+  top: -30px;
+}
+.swiper-container.small-slider .swiper-slide,
+.swiper-container2.small-slider .swiper-slide {
+  width: 800px!important;
+  height: 500px !important;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../img/icons/user-file.png');
+  background-size: 200px 200px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/********************************************************************************
+								WATERFALL CAROUSEL //OLD TO BE REMOVED
 ********************************************************************************/
 .gallery-btn {
   top: 50%;

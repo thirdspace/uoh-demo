@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router';
-
+import Footer from './Footer.jsx';
+import Header from './Header.jsx';
 
 var MyPoolContent = React.createClass({
    render() {
       return (
         <section id="mypool-content">
+
+            <Header title="MyPool" />
+
             <header id="topbar" className="alt">
               <div className="topbar-left">
                   <div className="button-group">
@@ -42,7 +46,7 @@ var MyPoolContent = React.createClass({
                         <p>Please create a new job description to get started</p>
 
                         <div className="btn-group">
-                          <Link to="/createjd" className="btn basic-btn ats-icon">
+                          <Link to="/createjd-step1" className="btn basic-btn ats-icon">
                           <img src="/img/icons/icon-more-info.png" width="20" height="20" />
                           New JD360</Link>
                         </div>
@@ -53,7 +57,10 @@ var MyPoolContent = React.createClass({
             </div>
           </section>
 
+            <Footer />
+
         </section>
+
       );
    }
 });
