@@ -2847,6 +2847,159 @@ li.small-toggle #sidebar_left_toggle .toggle-icon {
 	margin-left: 0 !important;
 }
 
+span.login-text {
+	color: @dark-grey !important;
+	font-family: 'Gotham-Medium' !important;
+	display: block;
+	text-align: center;
+}
+
+.login-box {
+    position: absolute;
+    z-index: 800;
+    left: 50%;
+    top: 50%;
+    padding: 40px 10px;
+    display: block;
+    transform: translate(-50%, -50%);
+	padding-top: 200px;
+
+	span.login-text.login-text2 {
+		display: none;
+	}
+
+	&:hover {
+		img.avatar-hex {
+			opacity: .6;
+
+		}
+	}
+
+	@media screen and (max-width: 1400px) {
+		top: 35% !important;
+
+		 .user-tile img {
+			padding: 5px 23px !important;
+
+			&:hover {
+				padding: 5px 5px !important;
+				line-height: 5em;
+
+				&.avatar-hex {
+					opacity: 1;
+					margin-top: -25px;
+				}
+			}
+		}
+	}
+
+
+	#username {
+	    font-weight: 300;
+	    margin-bottom: 10px;
+	    padding-left: 10px;
+	    width: 105.5%;
+	}
+
+	.password-box {
+		display: none;
+		width: 230px;
+		margin-top: 20px;
+	}
+
+	button {
+		width: 100%;
+		margin-top: 10px;
+		color: @white;
+
+		&:hover {
+			background-color: @brand-red;
+			border-color: transparent;
+		}
+	}
+
+    .user-tile {
+
+    	&:extend(.ease);
+    	&:extend(.cursor-pointer);
+
+    	a {
+			text-decoration: none;
+    	}
+
+    	&.selected {
+
+    		.field.prepend-icon input {
+    			padding: 5px 30px;
+    		}
+
+    		.login-name {
+    			color: @white !important;
+			    text-decoration: none;
+    		}
+
+    		img {
+    			padding: 0 !important;
+    		}
+
+    		.password-box {
+    			display: block !important;
+    		}
+    	}
+
+    	img {
+	    	padding: 15px;
+	    	max-width: 240px;
+
+	    	&:extend(.ease);
+    	}
+
+    	&:hover {
+
+    		img {
+	    		padding: 0px;
+    		}
+    		span.login-text {
+    			color: @white;
+    		}
+
+    		 span.login-name {
+    		 	color: @white !important;
+				text-decoration: none;
+    		 }
+    	}
+    }
+
+    span.login-text {
+    	display: block;
+    	text-align: center;
+    	color: @white;
+    	font-family: "Gotham-Light";
+    	font-size: 18px;
+    	font-weight: 100;
+    	letter-spacing: .06em;
+    	padding-bottom: 40px;
+    }
+
+    .main-logo {
+    	position: absolute;
+    	z-index: 900;
+    	max-width: 280px;
+    	left: 50%;
+    	top: 0%;
+    	transform: translateX(-50%);
+    }
+
+    .login-name {
+    	display: block;
+    	text-align: center;
+    	color: @light-grey-80 !important;
+    	font-family: 'Gotham-Medium' !important;
+    	font-size: 12pt;
+    	width: 240px;
+    }
+}
+
 #main.login {
 	overflow: hidden;
 
@@ -2867,157 +3020,6 @@ li.small-toggle #sidebar_left_toggle .toggle-icon {
 			background-color: @white-20;
 			border-radius: 40px;
 		}
-	}
-
-	#content {
-
-		span.login-text {
-			color: @dark-grey !important;
-			font-family: 'Gotham-Medium' !important;
-			display: block;
-			text-align: center;
-		}
-
-	    .login-box {
-		    position: absolute;
-		    z-index: 800;
-		    left: 50%;
-		    top: 50%;
-		    padding: 40px 10px;
-    	    display: block;
-		    transform: translate(-50%, -50%);
-	    	padding-top: 200px;
-
-	    	span.login-text.login-text2 {
-	    		display: none;
-	    	}
-
-	    	&:hover {
-	    		img.avatar-hex {
-	    			opacity: .6;
-
-	    		}
-	    	}
-
-	    	@media screen and (max-width: 1400px) {
-	    		top: 35% !important;
-
-	    		 .user-tile img {
-					padding: 5px 23px !important;
-
-					&:hover {
-						padding: 5px 5px !important;
-						line-height: 5em;
-
-						&.avatar-hex {
-							opacity: 1;
-							margin-top: -25px;
-						}
-					}
-	    		}
-	    	}
-
-
-	    	#username {
-			    font-weight: 300;
-			    margin-bottom: 10px;
-			    padding-left: 10px;
-			    width: 105.5%;
-			}
-
-	    	.password-box {
-	    		display: none;
-	    		width: 230px;
-	    		margin-top: 20px;
-	    	}
-
-	    	button {
-	    		width: 100%;
-	    		margin-top: 10px;
-	    		color: @white;
-
-				&:hover {
-					background-color: @brand-red;
-					border-color: transparent;
-				}
-	    	}
-
-		    .user-tile {
-
-		    	&:extend(.ease);
-		    	&:extend(.cursor-pointer);
-
-		    	&.selected {
-
-		    		.field.prepend-icon input {
-		    			padding: 5px 30px;
-		    		}
-
-		    		.login-name {
-		    			color: @white !important;
-		    		}
-
-		    		img {
-		    			padding: 0 !important;
-		    		}
-
-		    		.password-box {
-		    			display: block !important;
-		    		}
-		    	}
-
-		    	img {
-			    	padding: 15px;
-			    	max-width: 240px;
-
-			    	&:extend(.ease);
-		    	}
-
-		    	&:hover {
-
-		    		img {
-			    		padding: 0px;
-		    		}
-		    		span.login-text {
-		    			color: @white;
-		    		}
-
-		    		 span.login-name {
-		    		 	color: @white !important;
-		    		 }
-		    	}
-		    }
-
-		    span.login-text {
-		    	display: block;
-		    	text-align: center;
-		    	color: @white;
-		    	font-family: "Gotham-Light";
-		    	font-size: 18px;
-		    	font-weight: 100;
-		    	letter-spacing: .06em;
-		    	padding-bottom: 40px;
-		    }
-
-		    .main-logo {
-		    	position: absolute;
-		    	z-index: 900;
-		    	max-width: 280px;
-		    	left: 50%;
-		    	top: 0%;
-		    	transform: translateX(-50%);
-		    }
-
-		    .login-name {
-		    	display: block;
-		    	text-align: center;
-		    	color: @light-grey-80 !important;
-		    	font-family: 'Gotham-Medium' !important;
-		    	font-size: 12pt;
-		    	width: 240px;
-		    }
-	    }
-
 	}
 
 	&:before {

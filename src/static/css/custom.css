@@ -1270,7 +1270,7 @@ a.text-link:hover {
 .sidecontacts-list .sidechat-contacts .sidechat-contact:hover,
 .sidechat .sidechat-contacts .sidechat-contact-add-more,
 .sidecontacts-list .sidechat-contacts .sidechat-contact-add-more,
-#main.login #content .login-box .user-tile,
+.login-box .user-tile,
 .session-history .filters ul li:hover,
 .session-history #topbar .back-button,
 .session-history #topbar li.filter,
@@ -1313,8 +1313,8 @@ button,
 .sidecontacts-list .toggle-icon,
 .sidechat .sidechat-contacts .sidechat-contact,
 .sidecontacts-list .sidechat-contacts .sidechat-contact,
-#main.login #content .login-box .user-tile,
-#main.login #content .login-box .user-tile img,
+.login-box .user-tile,
+.login-box .user-tile img,
 .progressive-screen .source-select .source,
 .job-listing-container .mypool-job .mypool-header-filters .filter,
 .job-listing-container .mypool-job .mypool-candidate .mypool-candidate-originaldoc,
@@ -2724,6 +2724,120 @@ li.small-toggle #sidebar_left_toggle .toggle-icon {
 #main.login #content .login-box .user-tile.selected.user-tile3 {
   margin-left: 0 !important;
 }
+span.login-text {
+  color: #3a4551 !important;
+  font-family: 'Gotham-Medium' !important;
+  display: block;
+  text-align: center;
+}
+.login-box {
+  position: absolute;
+  z-index: 800;
+  left: 50%;
+  top: 50%;
+  padding: 40px 10px;
+  display: block;
+  transform: translate(-50%, -50%);
+  padding-top: 200px;
+}
+.login-box span.login-text.login-text2 {
+  display: none;
+}
+.login-box:hover img.avatar-hex {
+  opacity: .6;
+}
+@media screen and (max-width: 1400px) {
+  .login-box {
+    top: 35% !important;
+  }
+  .login-box .user-tile img {
+    padding: 5px 23px !important;
+  }
+  .login-box .user-tile img:hover {
+    padding: 5px 5px !important;
+    line-height: 5em;
+  }
+  .login-box .user-tile img:hover.avatar-hex {
+    opacity: 1;
+    margin-top: -25px;
+  }
+}
+.login-box #username {
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  width: 105.5%;
+}
+.login-box .password-box {
+  display: none;
+  width: 230px;
+  margin-top: 20px;
+}
+.login-box button {
+  width: 100%;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.login-box button:hover {
+  background-color: #ed5454;
+  border-color: transparent;
+}
+.login-box .user-tile a {
+  text-decoration: none;
+}
+.login-box .user-tile.selected .field.prepend-icon input {
+  padding: 5px 30px;
+}
+.login-box .user-tile.selected .login-name {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.login-box .user-tile.selected img {
+  padding: 0 !important;
+}
+.login-box .user-tile.selected .password-box {
+  display: block !important;
+}
+.login-box .user-tile img {
+  padding: 15px;
+  max-width: 240px;
+}
+.login-box .user-tile:hover img {
+  padding: 0px;
+}
+.login-box .user-tile:hover span.login-text {
+  color: #ffffff;
+}
+.login-box .user-tile:hover span.login-name {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.login-box span.login-text {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Gotham-Light";
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: .06em;
+  padding-bottom: 40px;
+}
+.login-box .main-logo {
+  position: absolute;
+  z-index: 900;
+  max-width: 280px;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+}
+.login-box .login-name {
+  display: block;
+  text-align: center;
+  color: rgba(188, 191, 193, 0.8) !important;
+  font-family: 'Gotham-Medium' !important;
+  font-size: 12pt;
+  width: 240px;
+}
 #main.login {
   overflow: hidden;
 }
@@ -2742,115 +2856,6 @@ li.small-toggle #sidebar_left_toggle .toggle-icon {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
-}
-#main.login #content span.login-text {
-  color: #3a4551 !important;
-  font-family: 'Gotham-Medium' !important;
-  display: block;
-  text-align: center;
-}
-#main.login #content .login-box {
-  position: absolute;
-  z-index: 800;
-  left: 50%;
-  top: 50%;
-  padding: 40px 10px;
-  display: block;
-  transform: translate(-50%, -50%);
-  padding-top: 200px;
-}
-#main.login #content .login-box span.login-text.login-text2 {
-  display: none;
-}
-#main.login #content .login-box:hover img.avatar-hex {
-  opacity: .6;
-}
-@media screen and (max-width: 1400px) {
-  #main.login #content .login-box {
-    top: 35% !important;
-  }
-  #main.login #content .login-box .user-tile img {
-    padding: 5px 23px !important;
-  }
-  #main.login #content .login-box .user-tile img:hover {
-    padding: 5px 5px !important;
-    line-height: 5em;
-  }
-  #main.login #content .login-box .user-tile img:hover.avatar-hex {
-    opacity: 1;
-    margin-top: -25px;
-  }
-}
-#main.login #content .login-box #username {
-  font-weight: 300;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  width: 105.5%;
-}
-#main.login #content .login-box .password-box {
-  display: none;
-  width: 230px;
-  margin-top: 20px;
-}
-#main.login #content .login-box button {
-  width: 100%;
-  margin-top: 10px;
-  color: #ffffff;
-}
-#main.login #content .login-box button:hover {
-  background-color: #ed5454;
-  border-color: transparent;
-}
-#main.login #content .login-box .user-tile.selected .field.prepend-icon input {
-  padding: 5px 30px;
-}
-#main.login #content .login-box .user-tile.selected .login-name {
-  color: #ffffff !important;
-}
-#main.login #content .login-box .user-tile.selected img {
-  padding: 0 !important;
-}
-#main.login #content .login-box .user-tile.selected .password-box {
-  display: block !important;
-}
-#main.login #content .login-box .user-tile img {
-  padding: 15px;
-  max-width: 240px;
-}
-#main.login #content .login-box .user-tile:hover img {
-  padding: 0px;
-}
-#main.login #content .login-box .user-tile:hover span.login-text {
-  color: #ffffff;
-}
-#main.login #content .login-box .user-tile:hover span.login-name {
-  color: #ffffff !important;
-}
-#main.login #content .login-box span.login-text {
-  display: block;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Gotham-Light";
-  font-size: 18px;
-  font-weight: 100;
-  letter-spacing: .06em;
-  padding-bottom: 40px;
-}
-#main.login #content .login-box .main-logo {
-  position: absolute;
-  z-index: 900;
-  max-width: 280px;
-  left: 50%;
-  top: 0%;
-  transform: translateX(-50%);
-}
-#main.login #content .login-box .login-name {
-  display: block;
-  text-align: center;
-  color: rgba(188, 191, 193, 0.8) !important;
-  font-family: 'Gotham-Medium' !important;
-  font-size: 12pt;
-  width: 240px;
 }
 #main.login:before {
   content: '';

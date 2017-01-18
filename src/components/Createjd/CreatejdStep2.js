@@ -5,14 +5,6 @@ import { Link } from 'react-router';
 import ProgressFooter from '../ProgressFooter.jsx';
 import Header from '../Header.jsx';
 
-const primaryButton = () => (
-     <button className="progress-btn btn secondary">Back</button>
-)
-const secondaryButton = () => (
-      <button className="progress-btn btn primary">Next</button>
-);
-
-
 export default class CreatejdStep2 extends React.Component {
    render() {
       return (
@@ -109,28 +101,10 @@ export default class CreatejdStep2 extends React.Component {
 
             </div>
 
-            <footer id="bottom-nav" className="bottom-nav">
-              <div className="row">
-                  <div className="bottom-nav-left col-xs-1 col-md-3">
-                    &nbsp;
-                  </div>
-
-                  <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
-                    <button id="backBtn" className="progress-btn btn secondary">Back</button>
-
-                    <Link to="/createjd-step3">
-                     <button id="nextBtn" className="progress-btn btn primary">Next</button>
-                    </Link>
-                  </div>
-
-                  <div className="bottom-nav-right col-xs-1 col-md-3">
-                    &nbsp;
-                  </div>
-                </div>
-            </footer>
-
-
           </div>
+
+           <ProgressFooter next="/createjd-step3" />
+
         </section>
       );
    }

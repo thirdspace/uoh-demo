@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router';
+
 
 var ProgressFooter = React.createClass({
    render() {
@@ -10,8 +12,12 @@ var ProgressFooter = React.createClass({
                 </div>
                
                 <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
-                  <button  className="progress-btn btn secondary">Back</button>
-                  <button className="progress-btn btn primary">Next</button>
+                   <Link to={this.props.next}>
+                    <button className="progress-btn btn secondary">Back</button>
+                  </Link>
+                  <Link to={this.props.next}>
+                    <button className="progress-btn btn primary">Next</button>
+                  </Link>
                 </div>
 
                 <div className="bottom-nav-right col-xs-1 col-md-3">
