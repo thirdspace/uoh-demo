@@ -2811,8 +2811,12 @@ span.login-text {
   padding: 15px;
   max-width: 240px;
 }
+.login-box .user-tile:hover {
+  opacity: 1 !important;
+}
 .login-box .user-tile:hover img {
   padding: 0px;
+  opacity: 1 !important;
 }
 .login-box .user-tile:hover span.login-text {
   color: #ffffff;
