@@ -103,7 +103,7 @@ export default class CreatejdStep2 extends React.Component {
 
           </div>
 
-           <ProgressFooter next="/createjd-step3" />
+           <ProgressFooter back="/createjd" next="/createjd-step3" />
 
         </section>
       );

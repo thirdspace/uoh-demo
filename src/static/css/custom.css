@@ -58,6 +58,15 @@ body {
 #main {
   min-height: 100vh;
 }
+a.disabled {
+  pointer-events: none;
+}
+a.disabled .progress-btn.btn {
+  opacity: .6;
+  background-color: #bcbfc1 !important;
+  color: rgba(58, 69, 81, 0.6) !important;
+  border-color: transparent !important;
+}
 #questions-heading {
   display: none;
 }
@@ -4468,6 +4477,15 @@ p.empty-message {
   padding-top: 100px;
   background-color: rgba(255, 255, 255, 0.8) !important;
 }
+.template-select.selected .swiper-slide-active {
+  border: 3px solid #ed5454;
+}
+.publish-link button {
+  display: none;
+}
+.template-option.selected {
+  border: 3px solid #ed5454;
+}
 .template-list {
   background-color: #ffffff;
   margin-left: -70px;
@@ -4538,7 +4556,6 @@ p.empty-message {
   height: 400px;
   background: white;
   color: black;
-  display: none;
   position: absolute;
   transform: translateX(-50%);
   padding: 40px;
@@ -4569,7 +4586,7 @@ p.empty-message {
 #publish-dialogue .publish-logo-container.active .publish-logo.color {
   display: block;
   opacity: 1;
-  border: 2px solid #ed5454;
+  border: 3px solid #ed5454;
 }
 #publish-dialogue .publish-logo-container.active.published .publish-logo.color {
   border: 0px solid transparent;
@@ -5009,6 +5026,31 @@ p.empty-message {
   }
 }
 /*************************** ROLE 360 ***************************/
+.preview-mode {
+  zoom: .4;
+}
+.preview-mode .fake-spider-chart {
+  min-height: 500px;
+}
+.preview-mode .role360-slider .role360-slide {
+  height: 580px;
+}
+.preview-mode .role360-slider {
+  margin-bottom: 100px;
+}
+.preview-mode .role360-slider .action-col a {
+  height: 180px !important;
+}
+.preview-mode .role360-slider .fake-indicators {
+  bottom: -100px;
+}
+.preview-mode .label {
+  padding: 0;
+  overflow: visible;
+}
+.preview-mode .role360-slider .action-col {
+  margin-right: 95px;
+}
 .role360-slider {
   width: 100%;
   background-color: #6d7c7c;
@@ -5018,6 +5060,7 @@ p.empty-message {
   padding-bottom: 180px;
   overflow: hidden;
   min-height: 400px;
+  display: none;
 }
 .role360-slider .tab-linka {
   text-decoration: none;
@@ -5550,7 +5593,8 @@ p.empty-message {
 .front .template-select-nav {
   display: inline-block;
 }
-#preview-button {
+#preview-button,
+#editBtn {
   display: none;
 }
 .preview-view {

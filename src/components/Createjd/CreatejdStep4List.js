@@ -32,7 +32,7 @@ export default class CreatejdStep4List extends React.Component {
               </select>
             </div>
             <div className="col-xs-2 input-col margin-top-35">
-              <Link className="list-icon" to="/createjd-step4-preview">
+              <Link id="template-preview-btn" className="list-icon" to="/preview-view">
                   <span className="field-text">List view</span>
                   <span className="octicon octicon-list-ordered"></span>
               </Link>
@@ -51,27 +51,27 @@ export default class CreatejdStep4List extends React.Component {
                   <th>Source</th>
                 </tr>
 
-                <tr>
+                <tr className="template-option">
                   <td>Basic Template</td>
                   <td>Utility layout covers most needs.</td>
                   <td>Shrpas Template</td>
                 </tr>
-                <tr>
+                <tr className="template-option">
                   <td>Extended Template</td>
                   <td>A long-form description with many components</td>
                   <td>Shrpas Template</td>
                 </tr>
-                <tr>
+                <tr className="template-option">
                   <td>Video Template</td>
                   <td>Media focused template</td>
                   <td>Shrpas Template</td>
                 </tr>
-                <tr>
+                <tr className="template-option">
                   <td>Quick Template</td>
                   <td>A brief job description to give overview</td>
                   <td>Shrpas Template</td>
                 </tr>
-                <tr>
+                <tr className="template-option">
                   <td>Promo Template</td>
                   <td>Show off the coolest parts of your role/office/company</td>
                   <td>Shrpas Template</td>
@@ -81,26 +81,7 @@ export default class CreatejdStep4List extends React.Component {
             </div>
           </div>
         </div>
-
-        <footer id="bottom-nav" className="bottom-nav">
-              <div className="row">
-                  <div className="bottom-nav-left col-xs-1 col-md-3">
-                    &nbsp;
-                  </div>
-
-                  <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
-                    <button id="backBtn" className="progress-btn btn secondary">Back</button>
-
-                    <Link to="/createjd-step5">
-                     <button id="nextBtn" className="progress-btn btn primary">Next</button>
-                    </Link>
-                  </div>
-
-                  <div className="bottom-nav-right col-xs-1 col-md-3">
-                    &nbsp;
-                  </div>
-                </div>
-            </footer>
+      
       </section>
 
 

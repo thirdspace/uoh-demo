@@ -29,6 +29,16 @@ body {
 	min-height: 100vh;
 }
 
+a.disabled {
+	pointer-events: none;
+
+	.progress-btn.btn {
+		opacity: .6;
+		background-color: @light-grey !important;
+		color: @dark-grey-60 !important;
+		border-color: transparent !important;
+	}
+}
 
 #questions-heading {
 	display: none;
@@ -4834,6 +4844,22 @@ p.empty-message {
 	background-color: @white-80 !important;
 }
 
+.template-select.selected .swiper-slide-active {
+	border: 3px solid @brand-red;
+}
+
+.publish-link {
+
+	button {
+			display: none;
+	}
+
+}
+
+.template-option.selected {
+	border: 3px solid @brand-red;
+}
+
 .template-list {
 	background-color: @white;
 	margin-left: -70px;
@@ -4913,7 +4939,6 @@ p.empty-message {
     background: white;
     color: black;
     padding: 40px;
-    display: none;
     position: absolute;
     transform: translateX(-50%);
     padding: 40px;
@@ -4954,7 +4979,7 @@ p.empty-message {
 		    	&.color {
 		    		display: block;
 		    		opacity: 1;
-		    		border: 2px solid @brand-red
+		    		border: 3px solid @brand-red
 		    	}
 			}
 
@@ -5468,6 +5493,39 @@ p.empty-message {
 
 /*************************** ROLE 360 ***************************/
 
+.preview-mode {
+	zoom: .4;
+
+	.fake-spider-chart {
+	    min-height: 500px;
+	}
+
+	.role360-slider .role360-slide {
+		height: 580px;
+	}
+
+	.role360-slider {
+		margin-bottom: 100px;
+	}
+
+	.role360-slider .action-col a {
+		height: 180px !important;
+	}
+
+	.role360-slider .fake-indicators {
+		bottom: -100px;
+	}
+
+	.label {
+		padding: 0;
+		overflow: visible;
+	}
+
+	.role360-slider .action-col {
+	    margin-right: 95px;
+	}
+}
+
 .role360-slider {
 	width: 100%;
 	background-color: @mid-grey2;
@@ -5477,6 +5535,7 @@ p.empty-message {
 	padding-bottom: 180px;
 	overflow: hidden;
 	min-height: 400px;
+	display: none;
 
 	.tab-link {
 
@@ -6097,7 +6156,8 @@ p.empty-message {
 	display: inline-block;
 }
 
-#preview-button {
+#preview-button,
+#editBtn {
 	display: none;
 }
 

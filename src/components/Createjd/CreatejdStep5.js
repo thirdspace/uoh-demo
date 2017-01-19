@@ -69,7 +69,7 @@ export default class CreatejdStep5 extends React.Component {
                 <div className="col-sm-4">
                     <span className="jd-label">EMPLOYMENT TYPE:</span>
                     <span className="jd-maininfo">Full-time</span>
-                    <span className="edit-right-center glyphicon pencil icon_pencil"></span>
+                    <span className="edit-btn edit-right-center glyphicon pencil icon_pencil"></span>
                 </div>
               </div> {/* /row */}
             </div>
@@ -85,9 +85,9 @@ export default class CreatejdStep5 extends React.Component {
                <div className="panel">
                             <div className="panel-heading">
                                 <span className="panel-title">About the position</span>
-                                <i className="close-button imoon imoon-cancel-circle" />
+                                <i className="close-button close-btn imoon imoon-cancel-circle" />
                                 <i className="minimize-button glyphicon glyphicon-minus-sign" />
-                                <i className="settings-button glyphicon pencil icon_pencil" />
+                                <i className="edit-btn settings-button glyphicon pencil icon_pencil" />
                             </div>
                             <div className="panel-body mt10 center">
                               <p className="text-align-left">Are you seeking an environment where you can drive innovation? Are you interested in finding the best intersection of features vs. performance? We need a new software developer to help take Adobe Cretive Cloud to hte next level. We're looking for great code, innovation, and solid leadership to take our flagship voice product to the next level. Do you have experience windows software ...</p>
@@ -98,9 +98,9 @@ export default class CreatejdStep5 extends React.Component {
                       <div className="video-panel no-video panel">
                             <div className="panel-heading">
                                 <span className="panel-title">Video content</span>
-                                <i className="close-button imoon imoon-cancel-circle" />
+                                <i className="close-button close-btn imoon imoon-cancel-circle" />
                                 <i className="minimize-button glyphicon glyphicon-minus-sign" />
-                                <i className="settings-button glyphicon glyphicon-cog" />
+                                <i className="settings-btn settings-button glyphicon glyphicon-cog" />
                             </div>
                             <div className="video-viewer">
                               <div className="video-placeholder">
@@ -145,13 +145,13 @@ export default class CreatejdStep5 extends React.Component {
                       <div className="panel">
                             <div className="panel-heading">
                                 <span className="panel-title">Job perks</span>
-                                <i className="close-button imoon imoon-cancel-circle" />
+                                <i className="close-button close-btn imoon imoon-cancel-circle" />
                                 <i className="minimize-button glyphicon glyphicon-minus-sign" />
                             </div>
                             <div className="panel-body editable">
                               <div className="row">
                                 <div className="col-xs-12 perks-module">
-                                    <i className="settings-button glyphicon pencil icon_pencil" />
+                                    <i className="edit-btn settings-button glyphicon pencil icon_pencil" />
                                     <div className="row">
                                       <div className="col-xs-3 col-sm-2">
                                         <img className="img-responsive padding-12" src="/img/icons/package.png" />
@@ -194,7 +194,7 @@ export default class CreatejdStep5 extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-xs-12 perks-module">
-                                    <i className="settings-button glyphicon pencil icon_pencil" />
+                                    <i className="edit-btn settings-button glyphicon pencil icon_pencil" />
                                     <div className="row">
                                       <div className="col-xs-3 col-sm-2">
                                         <img className="img-responsive padding-12" src="/img/icons/starting-bonus.png" />
@@ -239,7 +239,7 @@ ligula porta. Nulla non nibh
                <div className="panel">
                             <div className="panel-heading">
                                 <span className="panel-title">Skills</span>
-                                <i className="close-button imoon imoon-cancel-circle" />
+                                <i className="close-button close-btn imoon imoon-cancel-circle" />
                                 <i className="minimize-button glyphicon glyphicon-minus-sign" />
                                 <i className="settings-button glyphicon glyphicon-resize-full" />
                             </div>
@@ -250,7 +250,7 @@ ligula porta. Nulla non nibh
                <div className="panel">
                             <div className="panel-heading">
                                 <span className="panel-title">Personality</span>
-                                <i className="close-button imoon imoon-cancel-circle" />
+                                <i className="close-button close-btn imoon imoon-cancel-circle" />
                                 <i className="minimize-button glyphicon glyphicon-minus-sign" />
                                 <i className="settings-button glyphicon glyphicon-resize-full" />
                             </div>
@@ -261,7 +261,7 @@ ligula porta. Nulla non nibh
                <div className="panel">
                             <div className="panel-heading">
                                 <span className="panel-title">Competency</span>
-                                <i className="close-button imoon imoon-cancel-circle" />
+                                <i className="close-button close-btn imoon imoon-cancel-circle" />
                                 <i className="minimize-button glyphicon glyphicon-minus-sign" />
                                 <i className="settings-button glyphicon glyphicon-resize-full" />
                             </div>
@@ -274,6 +274,57 @@ ligula porta. Nulla non nibh
 
         <div className="row no-margin">
           <div className="col-xs-12">
+
+            <div className="role360-slider">
+
+                <div className="row role360-header">
+                  <div className="col-xs-12">
+                    <div className="row header">
+                      <div className="col-sm-4">
+                        <span className="role360-tab-title">Tech</span>
+                                         
+                      </div>
+                      <div className="col-sm-5 action-col">
+                        <a href="#" className="tech-button tab-link selected">
+                          <img className="tab-icon off img-responsive" src="img/icons/tech-red.png" />
+                          <img className="tab-icon on img-responsive" src="img/icons/tech-yellow.png" />
+                          <span className="label">Tech</span>
+                        </a>
+                        <a className="org-button tab-link" href="#">
+                          <img className="tab-icon off img-responsive" src="img/icons/org-red.png" />
+                          <img className="tab-icon on img-responsive" src="img/icons/org-yellow.png" />                          <span className="label">Org</span>
+                        </a>
+                        <a className="outreach-button tab-link" href="#">
+                          <img className="tab-icon off img-responsive" src="img/icons/outreach-red.png" />
+                          <img className="tab-icon on img-responsive" src="img/icons/outreach-yellow.png" />
+                          <span className="label">Outreach</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="row role360-slide-row">
+
+                      <div className="col-xs-12">
+                        <div className="role360-slider">
+                          <div className="role360-slide card-1">
+                           
+                          </div>
+
+                          <div className="fake-indicators">
+                            <div className="indicator">
+                            </div>
+                            <div className="indicator">
+                            </div>
+                            <div className="indicator">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
 
             <div className="role360-creator">
 
@@ -291,7 +342,7 @@ ligula porta. Nulla non nibh
                   <div className="row header">
                     <div className="col-sm-4">
                       <span className="role360-tab-title">Tech</span>
-                        <i className="settings-button glyphicon pencil icon_pencil" />
+                        <i className="edit-btn settings-button glyphicon pencil icon_pencil" />
                     </div>
                     <div className="col-sm-3 type-col input-col">
                       <span className="jd-label">TYPE:</span>
@@ -308,7 +359,7 @@ ligula porta. Nulla non nibh
                                           <i className="minimize-button glyphicon glyphicon-minus-sign" />
                         </li>
                         <li>
-                           <i className="close-button imoon imoon-cancel-circle" />
+                           <i className="close-button close-btn imoon imoon-cancel-circle" />
                         </li>
                       </ul>
                       <a href="#" className="small-button disabled">
@@ -322,7 +373,7 @@ ligula porta. Nulla non nibh
                     <div className="col-xs-4">
                       <div className="role360-slide role-img1">
                         <div className="role-img">
-                            <span className="edit-button glyphicon glyphicon-resize-full"></span>
+                            <span className="edit-btn glyphicon glyphicon-resize-full"></span>
                               <span className="remove-button glyphicon glyphicon-remove"></span>
                         </div>
                       </div>
@@ -356,7 +407,7 @@ ligula porta. Nulla non nibh
                   <div className="row header">
                     <div className="col-sm-4">
                       <span className="role360-tab-title">Team</span>
-                                      <i className="settings-button glyphicon pencil icon_pencil" />
+                                      <i className="edit-btn settings-button glyphicon pencil icon_pencil" />
                     </div>
                     <div className="col-sm-3 type-col input-col">
                       <span className="jd-label">TYPE:</span>
@@ -373,7 +424,7 @@ ligula porta. Nulla non nibh
                                           <i className="minimize-button glyphicon glyphicon-minus-sign" />
                         </li>
                         <li>
-                           <i className="close-button imoon imoon-cancel-circle" />
+                           <i className="close-button close-btn imoon imoon-cancel-circle" />
                         </li>
                       </ul>
                       <a href="#" className="small-button disabled">
@@ -418,12 +469,13 @@ ligula porta. Nulla non nibh
 
                 </div>
               </div>
+
               <div className="row role360-tab">
                 <div className="col-xs-12">
                   <div className="row header">
                     <div className="col-sm-4">
                       <span className="role360-tab-title">Outreach</span>
-                                      <i className="settings-button glyphicon pencil long-string icon_pencil" />
+                                      <i className="edit-btn settings-button glyphicon pencil long-string icon_pencil" />
                     </div>
                     <div className="col-sm-3 type-col input-col">
                       <span className="jd-label">TYPE:</span>
@@ -440,7 +492,7 @@ ligula porta. Nulla non nibh
                                           <i className="minimize-button glyphicon glyphicon-minus-sign" />
                         </li>
                         <li>
-                           <i className="close-button imoon imoon-cancel-circle" />
+                           <i className="close-button close-btn imoon imoon-cancel-circle" />
                         </li>
                       </ul>
                       <a href="#" className="small-button disabled">
@@ -456,7 +508,7 @@ ligula porta. Nulla non nibh
 
                         <div className="role360-slide cause-img cause-img1">
                           <div className="role-img">
-                              <span className="edit-button glyphicon glyphicon-resize-full"></span>
+                              <span className="edit-btn glyphicon glyphicon-resize-full"></span>
                                 <span className="remove-button glyphicon glyphicon-remove"></span>
                           </div>
                         </div>
@@ -542,11 +594,20 @@ ligula porta. Nulla non nibh
               </div>
 
               <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
-                <button id="backBtn" className="progress-btn btn secondary">Back</button>
 
-              <Link to="/createjd-step5">
-                  <button id="nextBtn" className="progress-btn btn primary">Next</button>
+                <Link to="/createjd-step4">
+                  <button id="backBtn" className="progress-btn btn secondary">Back</button>
                 </Link>
+
+                <button id="editBtn" className="progress-btn btn secondary">Edit</button>
+
+                <Link className="publish-link" to="/publish-jd">
+                  <button id="nextBtn" className="progress-btn btn primary">Accept</button>
+                </Link>
+
+                <button id="preview-btn" className="progress-btn btn primary">Preview</button>
+
+
               </div>
 
               <div className="bottom-nav-right col-xs-1 col-md-3">
@@ -559,5 +620,6 @@ ligula porta. Nulla non nibh
       );
    }
 }
+
 
 

@@ -32,7 +32,7 @@ export default class CreatejdStep4Preview extends React.Component {
               </select>
             </div>
             <div className="col-xs-2 input-col margin-top-35">
-             <Link className="list-icon" to="/createjd-step4-list">
+             <Link className="list-icon" to="/createjd-step4">
                   <span className="field-text">List view</span>
                   <span className="octicon octicon-list-ordered"></span>
               </Link>
@@ -77,25 +77,6 @@ export default class CreatejdStep4Preview extends React.Component {
           <div className="swiper-pagination"></div>
         </div>
          
-         <footer id="bottom-nav" className="bottom-nav">
-          <div className="row">
-              <div className="bottom-nav-left col-xs-1 col-md-3">
-                &nbsp;
-              </div>
-
-              <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
-                <button id="backBtn" className="progress-btn btn secondary">Back</button>
-
-              <Link to="/createjd-step5">
-                  <button id="nextBtn" className="progress-btn btn primary">Next</button>
-                </Link>
-              </div>
-
-              <div className="bottom-nav-right col-xs-1 col-md-3">
-                &nbsp;
-              </div>
-            </div>
-        </footer>
         </section>
 
       );
