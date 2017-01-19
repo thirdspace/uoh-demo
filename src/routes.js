@@ -7,7 +7,7 @@ import Layout from './components/Layout';
 import Login from './components/Login.jsx';
 
 import IndexPage from './components/IndexPage';
-import MyPoolContent from './components/MyPoolContent';
+import MyPoolLayout from './components/MyPoolLayout';
 import ProgressFooter from './components/ProgressFooter.jsx';
 import NotFoundPage from './components/NotFoundPage';
 import Createjd from './components/Createjd/Createjd';
@@ -21,13 +21,20 @@ import CreatejdStep4Preview from './components/Createjd/CreatejdStep4Preview';
 import CreatejdStep5 from './components/Createjd/CreatejdStep5';
 import Publishjd from './components/Createjd/Publishjd';
 
+import EmptyMessage from './components/MyPool/EmptyMessage';
+
+
 
 const routes = (
   <Route path="/" component={Layout}>
 
     <IndexRoute path="/login" component={Login} />
 
-    <Route path="/mypool" component={MyPoolContent} />
+    <Route path="/mypool" component={MyPoolLayout}>
+        <IndexRoute path="/empty" component={EmptyMessage} />
+
+        <Route path="*" component={NotFoundPage}/>
+    </Route>
 
     <Route path="/createjd" component={Createjd}>
         <IndexRoute path="/createjd-step1" component={CreatejdStep1} />

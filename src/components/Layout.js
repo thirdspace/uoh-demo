@@ -5,8 +5,6 @@ import { Link } from 'react-router';
 import Sidebar from './Sidebar.jsx';
 import Footer from './Footer.jsx';
 
-import MyPoolContent from './MyPoolContent.jsx';
-
 export default class Layout extends React.Component {
   render() {
     return (

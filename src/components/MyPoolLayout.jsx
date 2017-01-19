@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import Footer from './Footer.jsx';
 import Header from './Header.jsx';
 
-var MyPoolContent = React.createClass({
+var MyPoolLayout= React.createClass({
    render() {
       return (
         <section id="mypool-content">
@@ -35,27 +35,7 @@ var MyPoolContent = React.createClass({
               </div>
           </header>
 
-          <section id="content-no-jobs" className="my-pool-empty table-layout overflow-hidden">
-            <div className="allcp-panels">
-
-              <div className="row">
-                <div className="col-xs-12 content-column">
-              
-                    <div className="notice-box">
-                        <p className="empty-message">No Existing Job Descriptions</p>
-                        <p>Please create a new job description to get started</p>
-
-                        <div className="btn-group">
-                          <Link to="/createjd" className="btn basic-btn ats-icon">
-                          <img src="/img/icons/icon-more-info.png" width="20" height="20" />
-                          New JD360</Link>
-                        </div>
-
-                    </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <div className="app-content">{this.props.children} </div>
 
             <Footer />
 
@@ -65,4 +45,4 @@ var MyPoolContent = React.createClass({
    }
 });
 
-module.exports = MyPoolContent;
+module.exports = MyPoolLayout;
