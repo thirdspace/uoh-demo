@@ -9,7 +9,7 @@
 (function($) {
 
   /* Template select */
-  $(document).ready(function () { 
+  $(document).ready(function () {
    
     /* List view handle select template */
     $(".template-option").click(function () {
@@ -62,7 +62,7 @@
     });
 
     var createjobdesc = document.createElement("Div");
-    createjobdesc.id = "jd01";
+    createjobdesc.id = "Congratulations, You've created a new job description";
     createjobdesc.className = "job-description";
     createjobdesc.onclick = createlisting.bind(null,createjobdesc);
     createjobdesc.innerHTML = "Publish";
@@ -95,28 +95,156 @@
 
   });
 
+    /* Delete toggle */
+    $(".candidate-checkbox").click(function () {
+        $("#delete-button").removeClass("disabled");
+    });
+
+    
+ /* Component toggle */
+    $(".componentItem").click(function () {
+        $("#no-components").hide();
+        $("#component-list").fadeIn("fast");
+    });     
+
+    $("#button1").click(function () {
+        $("#component1").fadeIn("slow");
+    });   
+
+    $("#button2").click(function () {
+        $("#component2").fadeIn("slow");
+    }); 
+
+       $("#button3").click(function () {
+        $("#component3").fadeIn("slow");
+    }); 
+
+       $("#button4").click(function () {
+        $("#component4").fadeIn("slow");
+    }); 
+
+       $("#button5").click(function () {
+        $("#component5").fadeIn("slow");
+    });   
+
+      /* Assess window */
+
+    $("#assess-button").click(function () {
+        $("#assess_window").fadeIn("800");
+    });
+
+     $("#close-send-assess,#send-assess-close").click(function () {
+        $("#assess_window").fadeOut("slow");
+    });
+
+       $("#done-assess").click(function () {
+        $("#assess_window").fadeOut("slow");
+        $("#AssessDetails").show();
+        $("#AssessConfirmation").hide();
+        $("#assess-btn-group1").show();
+        $("#assess-btn-group3").hide();
+    });
+
+     
+
+    $("#send-assess-button").click(function () {
+        $("#AssessDetails").fadeOut("fast");
+        $("#AssessConfirmation").fadeIn("slow");
+        $("#assess-btn-group1").fadeOut("fast");
+        $("#assess-btn-group3").fadeIn("slow");
+    });
+
+
+     
+    
+
+    /* Qualify window */
+
+    $("#qualify-button").click(function () {
+        $("#qualify_window").fadeIn("fast");
+    });
+
+    $("#close-send-qualify,#send-qualify-close,#done-qualify").click(function () {
+        $("#qualify_window").fadeOut("slow");
+    });
+
+    $("#send-qualify-button").click(function () {
+        $("#QualifyDetails").fadeOut("fast");
+        $("#QualifyConfirmation").fadeIn("slow");
+
+        $("#qualify-btn-group1").fadeOut("slow");
+        $("#qualify-btn-group3").fadeIn("slow");
+    });
+
+
+  /* Temporary - show assessment question options */
+  $("#button1").click(function () {
+          $('.options-component').fadeOut('fast');
+          $('.options-hints').fadeOut('fast');
+          $('.componentItem').removeClass("active").addClass("inactive");
+          $(this).removeClass("inactive").addClass("active");
+          $(".options-default").fadeOut("fast");
+          $(".options-multipleChoice").fadeIn("slow");
+          $('.options-multipleChoice .options-component').fadeIn('fast');
+    });
+
+    $("#button2").click(function () {
+          $('.options-component').fadeOut('fast');
+          $('.options-hints').fadeOut('fast');
+          $('.componentItem').removeClass("active").addClass("inactive");
+          $(this).removeClass("inactive").addClass("active");
+          $(".options-default").fadeOut("fast");
+          $(".options-textResponse").fadeIn("slow");
+          $('.options-textResponse .options-component').fadeIn('fast');
+    });
+
+  $( ".hints-toggle1" ).change(function() {
+        $(".options-hints1").toggle("slow");
+  });
+
+    $( ".hints-toggle2" ).change(function() {
+        $(".options-hints2").toggle("slow");
+  });
+
+      $( ".hints-toggle3" ).change(function() {
+        $(".options-hints3").toggle("slow");
+  });
+
+        $( ".hints-toggle4" ).change(function() {
+        $(".options-hints4").toggle("slow");
+  });
+
+          $( ".hints-toggle5" ).change(function() {
+        $(".options-hints5").toggle("slow");
+  });
 
     /* select publish settings */
   $(".publish-logo-container").click(function () {
       $(this).toggleClass("inactive").toggleClass("active");
   });
 
-  $(document).ready(function () {
-       $(".user-tile1").click(function () {
-           $(".user-tile2").hide("slide", { direction: "right" }, 400);
-           $(".user-tile3").hide("slide", { direction: "right" }, 400);
-           $(".user-tile1").addClass("selected");
-      });
-      $(".user-tile2").click(function () {
-           $(".user-tile3").hide("slide", { direction: "right" }, 400);
-           $(".user-tile1").hide("slide", { direction: "left" }, 400);
-           $(".user-tile2").addClass("selected");
-      });
-        $(".user-tile3").click(function () {
-           $(".user-tile1").hide("slide", { direction: "left" }, 400);
-           $(".user-tile2").hide("slide", { direction: "left" }, 400);
-           $(".user-tile3").addClass("selected");
-      });
+  /* Import window */
+    $('.folder').click(function(){
+      $('.body1').addClass('hidden');
+      $('.body2').removeClass('hidden');
+      $('.hidden-link').removeClass('hidden');
+  });
+
+  $('.person').click(function(){
+      $('.person.fresh').addClass('inactive');
+      $(this).toggleClass('active').toggleClass('inactive').removeClass('fresh');
+      $('#confirm-import-btn').removeClass('disabled');
+  });
+
+  $('#deselect-all').click(function(){
+      $('.person').removeClass('active');
+      $('#confirm-import-btn').addClass('disabled');
+  });
+
+
+  $('#select-all').click(function(){
+     $('.person').addClass('active');
+      $('#confirm-import-btn').removeClass('disabled');
   });
 
   /* Chat groups collapse */
@@ -135,6 +263,7 @@
   });
 
 
+
   /* MyContacts contact select */
   $(document).ready(function () { 
     $(".profile-view-toggle").click(function () {
@@ -144,6 +273,23 @@
   });
 
 
+  $(document).ready(function () {
+       $(".user-tile1").click(function () {
+           $(".user-tile2").hide("slide", { direction: "right" }, 400);
+           $(".user-tile3").hide("slide", { direction: "right" }, 400);
+           $(".user-tile1").addClass("selected");
+      });
+      $(".user-tile2").click(function () {
+           $(".user-tile3").hide("slide", { direction: "right" }, 400);
+           $(".user-tile1").hide("slide", { direction: "left" }, 400);
+           $(".user-tile2").addClass("selected");
+      });
+        $(".user-tile3").click(function () {
+           $(".user-tile1").hide("slide", { direction: "left" }, 400);
+           $(".user-tile2").hide("slide", { direction: "left" }, 400);
+           $(".user-tile3").addClass("selected");
+      });
+  });
 
 })(jQuery);
 

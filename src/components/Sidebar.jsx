@@ -55,33 +55,9 @@ var Sidebar = React.createClass({
                 </li>
                 <li className="nav-link">
                     <a className="accordion-toggle" href="#">
-                        <span className="sidebar-title">Notifications</span>
+                        <span className="sidebar-title">Assessment creator</span>
                         <span className="caret"></span>
                         <span className="sb-menu-icon fa fa-tasks"></span>
-                    </a>
-                </li>
-                {/*}<li className="nav-link">
-                    <a href="myjobs.html">
-                        <span className="sidebar-title">MyJobs</span>
-                        <span className="sb-menu-icon fa fa-briefcase"></span>
-                    </a>
-                </li>*/}
-                {/*<li className="nav-link">
-                    <a href="mycontacts.html">
-                        <span className="sidebar-title">Contacts</span>
-                        <span className="sb-menu-icon fa fa-book"></span>
-                    </a>
-                </li>*/}
-                {/*<li className="nav-link">
-                    <a href="mycalendar.html">
-                        <span className="sidebar-title">Calendar</span>
-                        <span className="sb-menu-icon fa fa-calendar-o"></span>
-                    </a>
-                </li>*/}
-                <li className="nav-link">
-                    <a className="new-email" href="email-layouts.html">
-                        <span className="sidebar-title">Mail</span>
-                        <span className="sb-menu-icon fa fa-envelope-o"></span>
                     </a>
                 </li>
                 <li className="nav-link">

@@ -116,13 +116,12 @@ export default class CreatejdStep5 extends React.Component {
                           <div className="table-responsive">
                   <table className="table video-list">
                     <tr className="video-row">
-                      <td className="name-col">
-                                      <a href="#">
-                                        <span className="glyphicon glyphicon-plus-sign"></span> Upload a new video
+                      <td className="name-col" colSpan={2}>
+                          <a href="#">
+                            <span className="glyphicon glyphicon-plus-sign"></span> Upload a new video
                         </a>
                       </td>
-                      <td className="time-col">&nbsp;</td>
-                      <td className="action-col">&nbsp;</td>
+                     
                     </tr>
                     <tr className="video-row">
                        <td >

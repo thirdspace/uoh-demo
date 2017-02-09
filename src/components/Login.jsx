@@ -5,11 +5,7 @@ var Login = React.createClass({
    render() {
       return (
 
-        <section id="content" className="animated">
-            
-            <a href="#">
-                <img id="back-button" className="back-button" src="img/icons/back.png" />
-            </a>
+        <section id="content" className="login-bg animated">
 
             <div className="login-box">
                 <img className="main-logo" src="img/logos/logo-black.png" alt="" />
@@ -20,7 +16,7 @@ var Login = React.createClass({
                 <div className="row">
 
                     <div className="col-sm-4 col1">
-                        <Link className="admin-login" to="/mypool">  
+                        <Link className="admin-login" to="/new-admin">  
                             <div id="user-tile1" className="user-tile user-tile1">
                                 <img src="img/avatars/alex-hex-500x500.png" className="avatar-hex img-responsive" alt="" />
                                 <span className="login-name">Alex Pascal</span>

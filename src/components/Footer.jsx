@@ -6,7 +6,7 @@ var Footer = React.createClass({
         <footer id="content-footer">
             <div className="row">
                 <div className="col-md-6">
-                    <span className="footer-legal">Copyright © 2016. All rights reserved. <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></span>
+                    <span className="footer-legal">Copyright © 2017. All rights reserved. <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></span>
                 </div>
                 <div className="col-md-6 text-right">
                     <span className="footer-meta"></span>

@@ -1,12 +1,15 @@
 "use strict";
 
-const athletes = [
+const applicants = [
   {
-    'id': 'driulis-gonzalez',
-    'name': 'Stephen Peaslee',
+    'id': 'lin-park',
+    'name': 'Lin Park',
     'country': 'cu',
     'birth': '1973',
-    'image': 'driulis-gonzalez.jpg',
+    'received': '4/23/17',
+    'lasttouch': '4/26/17',
+    'stage': 'stage1',
+    'image': '/img/avatars/lin-80x80.jpg',
     'cover': 'driulis-gonzalez-cover.jpg',
     'link': 'https://en.wikipedia.org/wiki/Driulis_González',
     'medals': [
@@ -29,11 +32,14 @@ const athletes = [
     ],
   },
   {
-    'id': 'mark-huizinga',
-    'name': 'Mark Huizinga',
+    'id': 'virgilio-menendez',
+    'name': 'Virgilio Menendez',
     'country': 'nl',
     'birth': '1973',
-    'image': 'mark-huizinga.jpg',
+    'received': '4/21/17',
+    'lasttouch': '4/23/17',
+    'stage': 'progress33 qualify',
+    'image': '/img/avatars/kalad-80x80.png',
     'cover': 'mark-huizinga-cover.jpg',
     'link': 'https://en.wikipedia.org/wiki/Mark_Huizinga',
     'medals': [
@@ -56,11 +62,14 @@ const athletes = [
     ],
   },
   {
-    'id': 'rishod-sobirov',
-    'name': 'Rishod Sobirov',
+    'id': 'james-westergard',
+    'name': 'James Westergard',
     'country': 'uz',
     'birth': '1986',
-    'image': 'rishod-sobirov.jpg',
+    'received': '4/19/17',
+    'lasttouch': '4/21/17',
+    'stage': 'progress33 qualify',
+    'image': '/img/avatars/jacob-80x80.png',
     'cover': 'rishod-sobirov-cover.jpg',
     'link': 'https://en.wikipedia.org/wiki/Rishod_Sobirov',
     'medals': [
@@ -74,11 +83,14 @@ const athletes = [
     ],
   },
   {
-    'id': 'ryoko-tani',
-    'name': 'Ryoko Tani',
+    'id': 'fletcher-elsworth',
+    'name': 'Fletcher Elsworth',
     'country': 'jp',
     'birth': '1975',
-    'image': 'ryoko-tani.jpg',
+    'received': '4/18/17',
+    'lasttouch': '4/19/17',
+    'stage': 'progress33 qualify',
+    'image': '/img/avatars/fletcher-80x80.jpg',
     'cover': 'ryoko-tani-cover.jpg',
     'link': 'https://en.wikipedia.org/wiki/Ryoko_Tani',
     'medals': [
@@ -105,7 +117,10 @@ const athletes = [
     'name': 'Teddy Riner',
     'country': 'fr',
     'birth': '1989',
-    'image': 'teddy-riner.jpg',
+    'received': '4/15/17',
+    'lasttouch': '4/17/17',
+    'stage': 'progress33 qualify',
+    'image': '/img/teddy-riner.jpg',
     'cover': 'teddy-riner-cover.jpg',
     'link': 'https://en.wikipedia.org/wiki/Teddy_Riner',
     'medals': [
@@ -131,4 +146,4 @@ const athletes = [
   }
 ];
 
-export default athletes;
+export default applicants;

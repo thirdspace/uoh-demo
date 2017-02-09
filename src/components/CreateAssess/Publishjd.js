@@ -9,7 +9,7 @@ export default class Publishjd extends React.Component {
    render() {
       return (
 
-            <section>
+            <section className="relative">
               <Header title="Select sources to publish" />
 
                <div id="publish-dialogue">
@@ -71,7 +71,7 @@ export default class Publishjd extends React.Component {
                      <Link to="/Createjd-step5">
                       <button className="progress-btn btn secondary">Back</button>
                     </Link>
-                    <Link to="/mypool">
+                    <Link to="/newjd">
                       <button id="publish-button" className="progress-btn btn primary"></button>
                     </Link>
                   </div>

@@ -3,14 +3,17 @@
 import React from 'react';
 import { Link } from 'react-router';
 import ProgressFooter from '../ProgressFooter';
+import Header from '../Header.jsx';
 
 
-export default class Createjd extends React.Component {
+export default class CreateAssess extends React.Component {
    render() {
       return (
         <section>
 
-        <div className="app-content">{this.props.children} </div>
+    	<Header title="New Assessment" />	
+
+        <div className="app-content creator-bg">{this.props.children} </div>
 
         </section>
       );

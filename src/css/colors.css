@@ -1,0 +1,38 @@
+/* Black & White */
+/* Greys */
+/* Brand colors */
+/* CSS Classes */
+.bg-color-primary {
+  background-color: #ed5454;
+}
+/* Named class values */
+.purple {
+  color: #8b86e0;
+}
+.success {
+  color: #7aab2b !important;
+}
+.danger {
+  color: #ed5454 !important;
+}
+.normal {
+  color: #3798c0 !important;
+}
+.note-color {
+  color: rgba(188, 191, 193, 0.8);
+}
+.white-80 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 42pt;
+  padding: 10px;
+}
+.white-80:hover {
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.aqua {
+  color: #10cfbd;
+}
+.white-bg {
+  background-color: rgba(255, 255, 255, 0.8);
+}
