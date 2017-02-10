@@ -32,6 +32,7 @@ import TestingLayout from './components/Testing/TestingLayout';
 import AssessStep1 from './components/Testing/AssessStep1';
 import AssessStep2 from './components/Testing/AssessStep2';
 import AssessStep3 from './components/Testing/AssessStep3';
+import AssessStep4 from './components/Testing/AssessStep4';
 
 const routes = (
   <Route path="/" component={Layout}>
@@ -63,6 +64,8 @@ const routes = (
         <IndexRoute path="/assess-step1" component={AssessStep1} />
         <Route path="/assess-step2" component={AssessStep2} />
         <Route path="/assess-step3" component={AssessStep3} />
+        <Route path="/assess-step4" component={AssessStep4} />
+
 
         <Route path="*" component={NotFoundPage}/>
     </Route>

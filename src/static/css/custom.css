@@ -3784,6 +3784,11 @@ span.login-text {
 #qualify-insights .selection-module > .row {
   padding: 0px;
 }
+#qualify-insights .response-window {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
 #qualify-insights .img-responsive.profile-photo {
   margin-top: -50px;
 }
@@ -6301,7 +6306,7 @@ body.takeover-active {
   width: auto !important;
   background-color: rgba(190, 190, 190, 0.4);
   padding: 20px;
-  margin-left: 0px;
+  margin-left: -20px;
   top: 80px;
   border-radius: 6px;
 }

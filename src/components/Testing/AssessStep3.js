@@ -9,14 +9,17 @@ export default class AssessStep3 extends React.Component {
    render() {
       return (
 
-      <div className="applicant-assessment">
+      <section>
 
       <Header />
 
-      <div className="quiz-window"><h1>steps</h1></div>
-  
+      <div className="quiz-window"><h1>steps</h1>
+
+       <ProgressFooter back="/assess-step3" next="/assess-step4" />
 
       </div>
+
+      </section>
 
       );
    }
