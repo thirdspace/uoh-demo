@@ -5,19 +5,20 @@ import { Link } from 'react-router';
 import ProgressFooter from '../ProgressFooter';
 import Header from '../Header.jsx';
 
-export default class AssessStep2 extends React.Component {
+export default class AssessmentInfo extends React.Component {
    render() {
       return (
 
-      <div className="applicant-assessment">
+      <div className="applicant-assessment assessment-container drop-down">
 
       <Header />
 
         <div id="content6">
           <div className="row">
-            <div className="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div className="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
               <div className="panel">
                 <div className="panel-header">
+                  <p className="quiz-length large-text">12 questions</p>
                   <span className="option-header">Product Manager Skill Assessment
                     <span className="option-subheader">Amazon Alexa Team</span>
                     <div className="additional-details">
@@ -26,7 +27,6 @@ export default class AssessStep2 extends React.Component {
                       <span className="fa fa-question-circle" />
                       <p>3 hints</p>
                       <br />
-                      <p className="large-text">12 questions</p>
                     </div>
                   </span></div>{/* /panel-header */}
                 <hr />
@@ -47,10 +47,12 @@ export default class AssessStep2 extends React.Component {
             <div className="row">
               <div className="bottom-nav-left col-xs-1 col-md-3">
               </div>
-              <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
+              <div id="button-div" className="bottom-nav-center col-xs-12 col-md-6 center">
+               <Link to="/applicant-assessment">
                 <button id="back-to-login" className="progress-btn btn secondary">Back</button>
-                <Link to="/assess-step3">
-                  <button id="begin-assessment" className="progress-btn btn primary">Begin Assessment</button>
+              </Link>
+                <Link to="/multiplechoice-question">
+                  <button id="begin-assessment" className="progress-btn btn primary">Start</button>
                 </Link>
               </div>
               <div className="bottom-nav-right col-xs-1 col-md-3">

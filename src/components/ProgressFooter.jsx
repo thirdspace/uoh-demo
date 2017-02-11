@@ -11,7 +11,7 @@ var ProgressFooter = React.createClass({
             <div className="bottom-nav-left col-xs-1 col-md-3">
             </div>
            
-            <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
+            <div id="button-div" className="bottom-nav-center col-xs-12 col-md-6 center">
                <Link to={this.props.back}>
                 <button className="progress-btn btn secondary">Back</button>
               </Link>

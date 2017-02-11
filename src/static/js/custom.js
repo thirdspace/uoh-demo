@@ -100,6 +100,13 @@
         $("#delete-button").removeClass("disabled");
     });
 
+    /* Temporary * Assessment - multiple choice -  select choice */
+    $(".answer-col").click(function () {
+        $(".answer-col").removeClass("selected");
+        $(this).addClass("selected");
+    });
+
+
     
  /* Component toggle */
     $(".componentItem").click(function () {

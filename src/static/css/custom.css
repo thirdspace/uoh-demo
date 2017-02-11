@@ -84,15 +84,6 @@ a.disabled .progress-btn.btn {
   padding-bottom: 20px;
   padding-top: 0px;
 }
-#content2,
-#content3,
-#content4,
-#content6,
-#content7 {
-  z-index: 10000;
-  position: absolute;
-  top: 60px;
-}
 #content2 .toolbar,
 #content3 .toolbar,
 #content4 .toolbar,
@@ -388,12 +379,11 @@ a.disabled .progress-btn.btn {
 #next-to-confirm {
   display: none;
 }
+.video-response .panel {
+  max-height: 700px;
+}
 #back-buttonz {
   display: none;
-}
-#video-question {
-  display: none;
-  margin-top: 15%;
 }
 #video-question .audio-button,
 #video-question .time {
@@ -1545,10 +1535,43 @@ header .main-logo {
   margin-left: 10px;
   max-height: 45px;
 }
+@media screen and (max-width: 900px) {
+  header .main-logo {
+    max-width: 140px;
+    margin-top: 5px;
+  }
+}
 header h2 {
   clear: both;
   font-weight: 100;
   display: block;
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  div#content.assessment-container {
+    margin-top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 599px) {
+  .navbar .navbar-btn.btn-group > .btn + .btn {
+    position: relative !important;
+    left: -8px !important;
+    bottom: -16px !important;
+  }
+  .navbar .navbar-btn.btn-group > .btn + .btn {
+    margin-right: -5px;
+  }
+  ul.navbar-right + .navbar-right {
+    margin-right: 0px !important;
+  }
+  div#content.assessment-container {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div#content.assessment-container {
+    margin-top: 220px;
+  }
 }
 /*********** Remove small-logo functionality *************/
 .navbar-logo-image {
@@ -3083,19 +3106,124 @@ span.login-text {
     line-height: 1em;
   }
 }
-#main.applicant-qualify,
-#main.applicant-assessment {
+.applicant-assessment {
+  margin-top: 60px;
+}
+.applicant-assessment hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.applicant-qualify,
+.applicant-assessment {
   overflow: scroll !important;
   background-color: #dbdbdb !important;
 }
-#main.applicant-qualify header.navbar,
-#main.applicant-assessment header.navbar,
-#main.applicant-qualify aside#sidebar_left,
-#main.applicant-assessment aside#sidebar_left {
+.applicant-qualify .assessment-container .panel,
+.applicant-assessment .assessment-container .panel {
+  margin-top: 40px;
+}
+.applicant-qualify .answer-col.selected span,
+.applicant-assessment .answer-col.selected span {
+  background-color: transparent;
+  border: 1px solid rgba(58, 69, 81, 0.6) !important;
+  pointer-events: none;
+}
+.applicant-qualify .answer-col.selected span:hover,
+.applicant-assessment .answer-col.selected span:hover {
+  cursor: default;
+}
+.applicant-qualify .answer-col.selected span span.number-circle,
+.applicant-assessment .answer-col.selected span span.number-circle {
+  background-color: rgba(58, 69, 81, 0.2);
+  border-color: transparent !important;
+}
+.applicant-qualify .answer-col.selected span:after,
+.applicant-assessment .answer-col.selected span:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 30px;
+  top: 30px;
+  background-image: url('../img/icons/confirm-icon.png');
+  background-size: 30px 30px;
+}
+.applicant-qualify button.hint-button,
+.applicant-assessment button.hint-button {
+  float: right;
+  margin-right: 20px !important;
+  padding: 4px 20px;
+  min-width: 140px;
+  display: inline-block;
+  height: 35px;
+  border-radius: 4px !important;
+}
+.applicant-qualify button.hint-button p,
+.applicant-assessment button.hint-button p {
+  font-family: "Gotham-Medium" !important;
+}
+.applicant-qualify button.hint-button:hover,
+.applicant-assessment button.hint-button:hover {
+  background-color: rgba(58, 69, 81, 0.1);
+  border-color: transparent;
+  color: rgba(58, 69, 81, 0.4);
+}
+@media screen and (max-width: 600px) {
+  .applicant-qualify button.hint-button,
+  .applicant-assessment button.hint-button {
+    margin-top: -55px !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .applicant-qualify button.hint-button,
+  .applicant-assessment button.hint-button {
+    margin-top: -40px !important;
+  }
+}
+.applicant-qualify button.hint-button .fa-clock-o,
+.applicant-assessment button.hint-button .fa-clock-o {
+  display: inline-block;
+  float: left;
+  padding: 8px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.applicant-qualify button.hint-button p,
+.applicant-assessment button.hint-button p {
+  line-height: 2.2em;
+  display: inline-block;
+  padding-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  .applicant-qualify .response-row,
+  .applicant-assessment .response-row {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .applicant-qualify .response-row,
+  .applicant-assessment .response-row {
+    margin-top: 60px;
+  }
+}
+.applicant-qualify .response-row button,
+.applicant-assessment .response-row button {
+  padding: 0;
+  margin: 0;
+  float: right: ;
+}
+.applicant-qualify p.quiz-length,
+.applicant-assessment p.quiz-length {
+  padding: 0;
+}
+.applicant-qualify aside#sidebar_left,
+.applicant-assessment aside#sidebar_left {
   display: none;
 }
-#main.applicant-qualify .progress-btn,
-#main.applicant-assessment .progress-btn {
+.applicant-qualify .progress-btn,
+.applicant-assessment .progress-btn {
   margin: 0 10px;
   margin-top: 0px;
   border-radius: 25em;
@@ -3104,26 +3232,26 @@ span.login-text {
   font-family: 'Gotham-Medium';
   transition: all 0.5s ease;
 }
-#main.applicant-qualify .progress-btn.secondary,
-#main.applicant-assessment .progress-btn.secondary {
+.applicant-qualify .progress-btn.secondary,
+.applicant-assessment .progress-btn.secondary {
   border: 2px solid rgba(188, 191, 193, 0.5);
   background-color: transparent;
   color: rgba(188, 191, 193, 0.5);
 }
-#main.applicant-qualify .progress-btn.secondary:hover,
-#main.applicant-assessment .progress-btn.secondary:hover {
+.applicant-qualify .progress-btn.secondary:hover,
+.applicant-assessment .progress-btn.secondary:hover {
   border: 2px solid #ed5454;
   background-color: rgba(58, 69, 81, 0.8);
   color: #ed5454;
 }
-#main.applicant-qualify .progress-btn.primary,
-#main.applicant-assessment .progress-btn.primary {
+.applicant-qualify .progress-btn.primary,
+.applicant-assessment .progress-btn.primary {
   background-color: #ed5454;
   border: 2px solid #ed5454;
   color: #ffffff;
 }
-#main.applicant-qualify .progress-btn.primary:hover,
-#main.applicant-assessment .progress-btn.primary:hover {
+.applicant-qualify .progress-btn.primary:hover,
+.applicant-assessment .progress-btn.primary:hover {
   background-color: #aa2d2d;
   border: 2px solid #aa2d2d;
   color: #ffffff;
@@ -3618,8 +3746,8 @@ span.login-text {
 #content6 .additional-details,
 #content7 .additional-details {
   position: absolute;
-  right: 40px;
-  top: 25px;
+  right: 10px;
+  top: 40px;
   font-size: 12pt;
 }
 #content6 .additional-details p,
@@ -3858,6 +3986,37 @@ span.login-text {
 }
 #QualifyConfirmation {
   display: none;
+}
+@media screen and (max-width: 600px) {
+  #content6 .quiz-length.large-text {
+    font-size: 10pt;
+    font-family: "Gotham-Bold";
+  }
+  .applicant-assessment .additional-details p {
+    font-size: 10pt;
+  }
+  #content6 .panel-header {
+    padding-left: 0;
+  }
+  .panel-body ul {
+    padding-left: 0;
+  }
+  #assess-intro #button-div button:first-child,
+  #assess-intro .progress-btn.secondary {
+    margin: 0px !important;
+  }
+  #assess-intro #button-div button:first-child {
+    float: left;
+  }
+  #assess-intro .progress-btn.secondary {
+    float: right;
+  }
+  .panel-header {
+    line-height: 1em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
 }
 #qualify-send-confirmation,
 #assess-send-confirmation {
@@ -4395,13 +4554,39 @@ button#done-assess {
   position: fixed;
   z-index: 80000000;
 }
-.question-row {
-  padding: 20px 40px;
+@media screen and (min-width: 600px) {
+  .question-row {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .question-row {
+    padding: 0px;
+  }
+}
+.question-row.answers .answer-col {
+  pointer-events: none;
 }
 .question-col {
   font-size: 18pt;
   margin-bottom: 20px;
   margin-left: 20px;
+}
+.answer-col {
+  font-family: "Gotham-Medium";
+  color: #3a4551;
+  padding: 10px;
+  cursor: pointer;
+}
+.answer-col span {
+  border-color: transparent !important;
+  background-color: rgba(58, 69, 81, 0.1);
+  border-radius: 4px;
+}
+.answer-col:hover span {
+  background-color: rgba(58, 69, 81, 0.2);
+  color: #3a4551;
+  border-color: transparent;
 }
 .answer-col span {
   display: block;
@@ -6513,6 +6698,17 @@ body.takeover-active {
   top: 0;
   left: 0;
   opacity: .6;
+}
+span.number-circle {
+  width: 35px;
+  height: 35px;
+  padding: 10px 12px !important;
+  border-radius: 40px;
+  line-height: 1em;
+  float: left;
+  margin-top: -4px;
+  margin-left: 0px;
+  background-color: rgba(58, 69, 81, 0.1);
 }
 /* MyPool table adjustment for header buttons */
 #content.my-pool.table-layout > div,

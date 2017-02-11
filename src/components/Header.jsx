@@ -6,11 +6,7 @@ export default class Header extends React.Component {
    render() {
       return (
         <header className="navbar navbar-fixed-top bg-dark">
-           <div className="navbar-logo-wrapper dark bg-dark">
-               <a className="navbar-logo-image" href="index.html">
-                   <img src="/img/logo.png" alt="" className="main-logo" />
-               </a>
-           </div>
+         <img src="/img/logo.png" alt="" className="main-logo" />
             <h3 className="page-location">{this.props.title}</h3>
            <ul className="nav navbar-nav navbar-right">
                <li className="settings-dropdown dropdown dropdown-fuse">

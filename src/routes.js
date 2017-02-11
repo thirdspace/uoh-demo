@@ -29,10 +29,10 @@ import SendQualify from './components/MyPool/SendQualify';
 
 
 import TestingLayout from './components/Testing/TestingLayout';
-import AssessStep1 from './components/Testing/AssessStep1';
-import AssessStep2 from './components/Testing/AssessStep2';
-import AssessStep3 from './components/Testing/AssessStep3';
-import AssessStep4 from './components/Testing/AssessStep4';
+import AssessmentWelcome from './components/Testing/AssessmentWelcome';
+import AssessmentInfo from './components/Testing/AssessmentInfo';
+import MultipleChoiceQuestion from './components/Testing/MultipleChoiceQuestion';
+import VideoQuestion from './components/Testing/VideoQuestion';
 
 const routes = (
   <Route path="/" component={Layout}>
@@ -60,11 +60,11 @@ const routes = (
         <Route path="*" component={NotFoundPage}/>
     </Route>
 
-    <Route path="/applicant-assess" component={TestingLayout}>
-        <IndexRoute path="/assess-step1" component={AssessStep1} />
-        <Route path="/assess-step2" component={AssessStep2} />
-        <Route path="/assess-step3" component={AssessStep3} />
-        <Route path="/assess-step4" component={AssessStep4} />
+    <Route path="/applicant-assessment" component={TestingLayout}>
+        <IndexRoute path="/assessment-welcome" component={AssessmentWelcome} />
+        <Route path="/assessment-info" component={AssessmentInfo} />
+        <Route path="/multiplechoice-question" component={MultipleChoiceQuestion} />
+        <Route path="/video-question" component={VideoQuestion} />
 
 
         <Route path="*" component={NotFoundPage}/>

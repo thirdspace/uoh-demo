@@ -64,9 +64,6 @@ a.disabled {
 #content4,
 #content6,
 #content7 {
-    z-index: 10000;
-    position: absolute;
-    top: 60px;
 
     .toolbar {
     	float: right;
@@ -224,13 +221,18 @@ a.disabled {
 	display: none;
 }
 
+.video-response {
+	.panel {
+		max-height: 700px;
+	}
+}
+
 
 #back-buttonz {
 	display: none;
 }
+
 #video-question {
-	display: none;
-	margin-top: 15%;
 
 	.audio-button,
 	.time {
@@ -1513,6 +1515,11 @@ header {
 	.main-logo {
 		margin-left: 10px;
 		max-height: 45px;
+
+		@media screen and (max-width: 900px) {
+		    max-width: 140px;
+		    margin-top: 5px;
+		}
 	}
 
 	h2 {
@@ -1521,8 +1528,43 @@ header {
 		display: block;
 	}
 }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+		div#content.assessment-container {
+			margin-top: 50%;
+			transform: translateY(-50%);
+		}
+
+}
 
 
+@media screen and (max-width: 599px) {
+		.navbar .navbar-btn.btn-group>.btn+.btn {
+		    position: relative !important;
+		    left: -8px !important;
+		    bottom: -16px !important;
+		}
+
+		.navbar .navbar-btn.btn-group>.btn+.btn {
+			margin-right: -5px;
+		}
+
+		ul.navbar-right+.navbar-right {
+		   margin-right: 0px !important;
+		}
+
+		div#content.assessment-container {
+			margin-top: 200px;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+
+		div#content.assessment-container {
+			margin-top: 220px;
+		}
+
+	}
 /*********** Remove small-logo functionality *************/
 
 .navbar-logo-image {
@@ -3299,12 +3341,125 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 }
 
-#main.applicant-qualify,
-#main.applicant-assessment {
+.applicant-assessment {
+	margin-top: 60px;
+
+	hr {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+}
+
+.applicant-qualify,
+.applicant-assessment {
 	overflow: scroll !important;
 	background-color: #dbdbdb !important;
 
-	header.navbar,
+	.assessment-container {
+
+		.panel {
+			margin-top: 40px;
+		}
+	}
+
+	.answer-col {
+		 &.selected span {
+			background-color: transparent;
+			border: 1px solid @dark-grey-60 !important;
+			pointer-events: none;
+
+			&:hover {
+				cursor: default;
+
+			}
+
+			span.number-circle {
+				background-color: @dark-grey-20;
+				border-color: transparent !important;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				right: 30px;
+				top: 30px;
+				background-image: url('../img/icons/confirm-icon.png');
+				background-size: 30px 30px;
+
+			}
+	    }
+	}
+
+	button.hint-button {
+	    float: right;
+	    margin-right: 20px !important;
+	    padding: 4px 20px;
+	    min-width: 140px;
+	    display: inline-block;
+	    height: 35px;
+	    border-radius: 4px !important;
+		
+		p {
+		    font-family: "Gotham-Medium" !important;
+		}
+
+	    &:hover{
+			background-color: @dark-grey-10;
+			border-color: transparent;
+			color: @dark-grey-40;
+	    }
+
+		@media screen and (max-width: 600px) {
+	    	margin-top: -55px !important;
+		}
+
+		@media screen and (min-width: 600px) {
+	    	margin-top: -40px !important;
+		}
+
+
+	    .fa-clock-o {
+		    display: inline-block;
+		    float: left;
+		    padding: 8px;
+		    margin-left: 10px;
+		    margin-right: 0;
+	    }
+
+	    p {
+	    	line-height: 2.2em;
+	    	display: inline-block;
+	    	padding-left: 10px;
+	    }
+
+
+	}
+
+	.response-row {
+
+		@media screen and (max-width: 600px) {
+			margin-top: 40px;
+		}
+
+		@media screen and (min-width: 600px) {
+			margin-top: 60px;
+		}
+
+		button {
+			padding: 0;
+			margin: 0;
+			float: right: ;
+		}
+	}
+
+	p.quiz-length {
+		padding: 0;
+	}
+
 	aside#sidebar_left {
 		display: none;
 	}
@@ -3918,8 +4073,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 	.additional-details {
 		position: absolute;
-		right: 40px;
-		top: 25px;
+	    right: 10px;
+   	 	top: 40px;
 		font-size: 12pt;
 
 		p {
@@ -4214,6 +4369,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 #QualifyConfirmation {
 	display: none;
+}
+
+@media screen and (max-width: 600px) {
+			
+	#content6 .quiz-length.large-text {
+		font-size: 10pt;
+		font-family: "Gotham-Bold";
+	}		
+
+	.applicant-assessment .additional-details p {
+		font-size: 10pt;
+	}
+
+	#content6 .panel-header {
+		padding-left: 0;
+	}
+
+	.panel-body ul {
+		padding-left: 0;
+	}
+
+	#assess-intro #button-div button:first-child,
+	#assess-intro .progress-btn.secondary {
+		margin: 0px !important;
+	}
+
+	#assess-intro #button-div button:first-child {
+		float: left;
+	}
+
+	#assess-intro .progress-btn.secondary {
+		float: right;
+	}
+
+	.panel-header {
+		line-height: 1em;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
 }
 
 #qualify-send-confirmation,
@@ -4774,7 +4969,18 @@ button#done-assess {
 }
 
 .question-row {
-  padding: 20px 40px;
+	@media screen and (min-width: 600px) {
+		  padding: 20px 40px;
+	}
+
+	@media screen and (max-width: 600px) {
+		  padding: 0px;
+	}
+
+	&.answers .answer-col {
+		pointer-events: none;
+	}
+
 }
 
 .question-col {
@@ -4784,6 +4990,22 @@ button#done-assess {
 }
 
 .answer-col {
+	font-family: "Gotham-Medium";
+		color: @dark-grey;
+		padding: 10px;
+		cursor: pointer;
+
+		span {
+			border-color: transparent !important;
+			background-color: @dark-grey-10;
+			border-radius: 4px;
+		}
+
+	&:hover span {
+		background-color: @dark-grey-20;
+		color: @dark-grey;
+		border-color: transparent;
+	}
 
 	span {
 		display: block;
@@ -7343,6 +7565,18 @@ body.takeover-active {
 		}
 	}
 
+}
+
+span.number-circle {
+    width: 35px;
+    height: 35px;
+    padding: 10px 12px !important;
+    border-radius: 40px;
+    line-height: 1em;
+    float: left;
+    margin-top: -4px;
+    margin-left: 0px;
+    background-color: @dark-grey-10;
 }
 
 
