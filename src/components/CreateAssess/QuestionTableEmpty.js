@@ -4,15 +4,12 @@ import React from 'react';
 import { Link } from 'react-router';
 import Subheader from '../Subheader.jsx';
 
-export default class PopulateQuestions extends React.Component {
+export default class QuestionTableEmpty extends React.Component {
    render() {
       return (
         <section className="jd360-listing-container">
 
-          <Subheader subtitle="Select components to build your assessment" />
-
-
-          <div className="jd360-listing question-table">
+         <div className="jd360-listing question-table drop-down">
             <table className="table table-header activity-table empty">
               <tbody><tr className="listing-header">
                   <td>

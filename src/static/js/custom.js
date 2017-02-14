@@ -32,6 +32,16 @@
       $(this).addClass("selected");
    });
 
+    /* Action icon on create assessment for question + and - buttons */
+  $("#action-icon1").click(function () {
+        $('.question-row.answers').fadeIn('fast');
+  });
+
+    $(".action-icon2").click(function () {
+        $('.question-row.answers').fadeOut('fast');
+  });
+  
+
   });
 
     /* Job Description Preview */
@@ -94,6 +104,16 @@
     });
 
   });
+
+    $(".audio-button").click(function () {
+          $(this).hide('fast');
+          $('.mute-button').show('fast');
+    });
+    
+    $(".mute-button").click(function () {
+           $(this).hide('fast');
+          $('.audio-button').show('fast');
+    });
 
     /* Delete toggle */
     $(".candidate-checkbox").click(function () {

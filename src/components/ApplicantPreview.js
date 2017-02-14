@@ -9,7 +9,7 @@ export default class ApplicantPreview extends React.Component {
 
         <tr className="mypool-candidate fresh stage0">
           <td>
-            <Link to={"/applicant/${this.props.id}"}>
+            <Link to={this.props.id}>
               <div className="checkbox-container">
                 <input className="candidate-checkbox" type="checkbox" defaultValue="None" id={this.props.name} name="check" />
                 <label htmlFor={this.props.name} />

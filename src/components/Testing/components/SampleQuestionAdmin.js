@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class SampleQuestion extends React.Component {
+export default class SampleQuestionAdmin extends React.Component {
    render() {
       return (
 

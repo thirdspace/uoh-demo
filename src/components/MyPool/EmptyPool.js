@@ -17,7 +17,7 @@ export default class EmptyPool extends React.Component {
                     <p>Create a grouping of applicants to send assessments to</p>
 
                     <div className="btn-group">
-                      <Link id="newjd360" to="/newjd" className="btn basic-btn ats-icon">
+                      <Link id="newjd360" to="/newgroup" className="btn basic-btn ats-icon">
                       <img src="/img/icons/icon-more-info.png" width="20" height="20" />
                        Target Group</Link>
                     </div>

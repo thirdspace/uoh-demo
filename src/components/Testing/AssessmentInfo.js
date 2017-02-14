@@ -61,6 +61,23 @@ export default class AssessmentInfo extends React.Component {
           </footer>
         </div>
 
+        <footer className="bottom-nav">
+            <div className="row">
+              <div className="bottom-nav-left col-xs-1 col-md-3">
+              </div>
+              <div id="button-div" className="bottom-nav-center col-xs-12 col-md-6 center">
+               <Link to="/applicant-assessment">
+                <button className="progress-btn btn secondary">Back</button>
+              </Link>
+                <Link to="/multiplechoice-question">
+                  <button className="progress-btn btn primary">Start</button>
+                </Link>
+              </div>
+              <div className="bottom-nav-right col-xs-1 col-md-3">
+              </div>
+            </div>
+          </footer>
+
       </div>
 
       );

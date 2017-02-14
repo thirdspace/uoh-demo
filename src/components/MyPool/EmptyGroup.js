@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class EmptyJobDesc extends React.Component {
+export default class EmptyGroup extends React.Component {
    render() {
       return (
       <section className="jd360-listing-container my-pool-nojobs table-layout overflow-hidden">

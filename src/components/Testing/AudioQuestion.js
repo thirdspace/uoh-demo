@@ -4,29 +4,30 @@ import React from 'react';
 import { Link } from 'react-router';
 import ProgressFooter from '../ProgressFooter';
 import Header from '../Header.jsx';
-import VideoRecord from './components/VideoRecord';
+import AudioRecord from './components/AudioRecord';
 
-export default class VideoQuestion extends React.Component {
+export default class AudioQuestion extends React.Component {
    render() {
       return (
 
-       <div className="applicant-assessment assessment-container video-question-container drop-down">
+       <div className="applicant-assessment assessment-container drop-down">
 
         <Header />
 
-            <div className="row response-row video-response">
+            <div className="row response-row audio-response">
               <div className="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 
-              <button className="hint-button">
-               <span className="fa fa-gears" /> 
-               Settings
-              </button>
+
+                <button className="hint-button">
+                 <span className="fa fa-gears" /> 
+                  Settings
+                </button>
 
                 <div className="panel">
                 
                   <div className="panel-body">
 
-                  <VideoRecord />
+                  <AudioRecord />
 
                   </div>
                 </div>
@@ -34,7 +35,7 @@ export default class VideoQuestion extends React.Component {
 
           </div>
 
-          <ProgressFooter back="/multiplechoice-question" next="/text-question" />
+          <ProgressFooter back="/text-question" next="/code-question" />
 
         </div>
 

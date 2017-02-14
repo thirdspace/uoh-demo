@@ -65,11 +65,11 @@ export default class AddQuestion extends React.Component {
             </div>
            
             <div id="button-div" className="bottom-nav-center col-xs-10 col-md-6 center">
-               <Link to="/populate-questions">
+               <Link to="/populate-assessment">
                 <button className="progress-btn btn secondary">Cancel</button>
               </Link>
-              <Link to="/populate-questions">
-                <button className="progress-btn btn primary">Okay</button>
+              <Link to="/populate-assessment2">
+                <button className="progress-btn btn primary">Add</button>
               </Link>
             </div>
 

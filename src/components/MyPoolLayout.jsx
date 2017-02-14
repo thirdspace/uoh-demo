@@ -54,7 +54,7 @@ var MyPoolLayout= React.createClass({
               </div>
           </header>
 
-          <div className="app-content">{this.props.children} </div>
+          <div className="app-content mypool">{this.props.children} </div>
 
           <Footer />
 

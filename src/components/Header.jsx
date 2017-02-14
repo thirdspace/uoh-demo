@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class Header extends React.Component {
    render() {
@@ -34,10 +35,11 @@ export default class Header extends React.Component {
                            </a>
                        </li>
                        <li className="list-group-item">
-                           <a href="#">
+                        <Link to="/">
+                          
                                Logout
                                <span className="fa fa-sign-out"></span>
-                           </a>
+                         </Link>
                        </li>
                    </ul>
                </li>

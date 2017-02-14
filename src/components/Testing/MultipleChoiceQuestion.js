@@ -4,14 +4,14 @@ import React from 'react';
 import { Link } from 'react-router';
 import ProgressFooterQuiz from '../ProgressFooter';
 import Header from '../Header.jsx';
-import SampleQuestion from './SampleQuestion.js';
+import SampleQuestion from './components/SampleQuestion.js';
 
 
 export default class MultipleChoiceQuestion extends React.Component {
    render() {
       return (
 
-    <div className="applicant-assessment assessment-container drop-down">
+    <div className="applicant-assessment assessment-container multiple-choice-container drop-down">
 
       <Header />
 
@@ -20,7 +20,7 @@ export default class MultipleChoiceQuestion extends React.Component {
 
               <button className="hint-button">
                 <span className="fa fa-question-circle" /> 
-                <p>Get Hint</p>
+                <p>Hint [3/3]</p>
               </button>
               
               <div className="panel">

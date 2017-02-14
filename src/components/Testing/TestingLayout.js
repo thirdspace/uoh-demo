@@ -8,7 +8,7 @@ export default class TestingLayout extends React.Component {
       return (
         <section>
 
-        <div className="app-content creator-bg">{this.props.children} </div>
+        <div className="creator-bg">{this.props.children} </div>
 
         </section>
       );

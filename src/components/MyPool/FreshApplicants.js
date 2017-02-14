@@ -13,7 +13,7 @@ export default class FreshApplicants extends React.Component {
         <section>
 
           <div className="jd360-listing">
-            <table className="table table-header activity-table empty">
+            <table className="table table-header activity-table">
               <tbody><tr className="listing-header">
                   <td colSpan={4}>
                     <span className="jd-position">Product Manager</span>

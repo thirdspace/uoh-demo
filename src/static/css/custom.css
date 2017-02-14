@@ -36,11 +36,15 @@
 .white-bg {
   background-color: rgba(255, 255, 255, 0.8);
 }
+/********************* GLOBAL *************************/
 .HIDETHIS {
   display: none;
 }
 .block {
   display: block;
+}
+.static {
+  position: static !important;
 }
 body {
   background: #2d3243 !important;
@@ -69,291 +73,6 @@ a.disabled .progress-btn.btn {
 }
 #questions-heading {
   display: none;
-}
-#content6,
-#content7 {
-  min-width: 90%;
-}
-#content6 .panel-header,
-#content7 .panel-header {
-  padding-left: 30px;
-  padding-top: 10px;
-}
-#content6 .panel-body,
-#content7 .panel-body {
-  padding-bottom: 20px;
-  padding-top: 0px;
-}
-#content2 .toolbar,
-#content3 .toolbar,
-#content4 .toolbar,
-#content6 .toolbar,
-#content7 .toolbar {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.6);
-  position: fixed;
-  padding: 10px 12px;
-  top: 80px;
-  right: 40px;
-  border-radius: 6px;
-}
-#content2 .toolbar.toolbar2,
-#content3 .toolbar.toolbar2,
-#content4 .toolbar.toolbar2,
-#content6 .toolbar.toolbar2,
-#content7 .toolbar.toolbar2,
-#content2 .toolbar.toolbar3,
-#content3 .toolbar.toolbar3,
-#content4 .toolbar.toolbar3,
-#content6 .toolbar.toolbar3,
-#content7 .toolbar.toolbar3 {
-  margin-top: 130px;
-}
-#content2 .toolbar.toolbar2.toolbar3,
-#content3 .toolbar.toolbar2.toolbar3,
-#content4 .toolbar.toolbar2.toolbar3,
-#content6 .toolbar.toolbar2.toolbar3,
-#content7 .toolbar.toolbar2.toolbar3,
-#content2 .toolbar.toolbar3.toolbar3,
-#content3 .toolbar.toolbar3.toolbar3,
-#content4 .toolbar.toolbar3.toolbar3,
-#content6 .toolbar.toolbar3.toolbar3,
-#content7 .toolbar.toolbar3.toolbar3 {
-  margin-top: 200px;
-}
-#content2 .toolbar.toolbar2.toolbar3.nudge,
-#content3 .toolbar.toolbar2.toolbar3.nudge,
-#content4 .toolbar.toolbar2.toolbar3.nudge,
-#content6 .toolbar.toolbar2.toolbar3.nudge,
-#content7 .toolbar.toolbar2.toolbar3.nudge,
-#content2 .toolbar.toolbar3.toolbar3.nudge,
-#content3 .toolbar.toolbar3.toolbar3.nudge,
-#content4 .toolbar.toolbar3.toolbar3.nudge,
-#content6 .toolbar.toolbar3.toolbar3.nudge,
-#content7 .toolbar.toolbar3.toolbar3.nudge {
-  margin-top: 220px;
-}
-#content2 .toolbar.toolbar2 .caption,
-#content3 .toolbar.toolbar2 .caption,
-#content4 .toolbar.toolbar2 .caption,
-#content6 .toolbar.toolbar2 .caption,
-#content7 .toolbar.toolbar2 .caption,
-#content2 .toolbar.toolbar3 .caption,
-#content3 .toolbar.toolbar3 .caption,
-#content4 .toolbar.toolbar3 .caption,
-#content6 .toolbar.toolbar3 .caption,
-#content7 .toolbar.toolbar3 .caption {
-  display: none;
-  font-family: 'Gotham-Medium';
-  font-size: 8pt;
-  text-align: center;
-  transition: all 0.5s ease;
-}
-#content2 .toolbar.toolbar2:hover span.caption,
-#content3 .toolbar.toolbar2:hover span.caption,
-#content4 .toolbar.toolbar2:hover span.caption,
-#content6 .toolbar.toolbar2:hover span.caption,
-#content7 .toolbar.toolbar2:hover span.caption,
-#content2 .toolbar.toolbar3:hover span.caption,
-#content3 .toolbar.toolbar3:hover span.caption,
-#content4 .toolbar.toolbar3:hover span.caption,
-#content6 .toolbar.toolbar3:hover span.caption,
-#content7 .toolbar.toolbar3:hover span.caption {
-  display: block;
-  margin-top: 2px;
-}
-#content2 .toolbar.toolbar2:hover button,
-#content3 .toolbar.toolbar2:hover button,
-#content4 .toolbar.toolbar2:hover button,
-#content6 .toolbar.toolbar2:hover button,
-#content7 .toolbar.toolbar2:hover button,
-#content2 .toolbar.toolbar3:hover button,
-#content3 .toolbar.toolbar3:hover button,
-#content4 .toolbar.toolbar3:hover button,
-#content6 .toolbar.toolbar3:hover button,
-#content7 .toolbar.toolbar3:hover button {
-  border-color: #ed5454;
-  color: #ed5454;
-}
-#content2 .toolbar.toolbar2 button,
-#content3 .toolbar.toolbar2 button,
-#content4 .toolbar.toolbar2 button,
-#content6 .toolbar.toolbar2 button,
-#content7 .toolbar.toolbar2 button,
-#content2 .toolbar.toolbar3 button,
-#content3 .toolbar.toolbar3 button,
-#content4 .toolbar.toolbar3 button,
-#content6 .toolbar.toolbar3 button,
-#content7 .toolbar.toolbar3 button {
-  width: 38px;
-  height: 38px;
-  border-radius: 30em;
-  padding: 5px;
-  line-height: 1em;
-}
-#content2 .toolbar.toolbar2 .fa-edit,
-#content3 .toolbar.toolbar2 .fa-edit,
-#content4 .toolbar.toolbar2 .fa-edit,
-#content6 .toolbar.toolbar2 .fa-edit,
-#content7 .toolbar.toolbar2 .fa-edit,
-#content2 .toolbar.toolbar3 .fa-edit,
-#content3 .toolbar.toolbar3 .fa-edit,
-#content4 .toolbar.toolbar3 .fa-edit,
-#content6 .toolbar.toolbar3 .fa-edit,
-#content7 .toolbar.toolbar3 .fa-edit,
-#content2 .toolbar.toolbar2 .fa-upload,
-#content3 .toolbar.toolbar2 .fa-upload,
-#content4 .toolbar.toolbar2 .fa-upload,
-#content6 .toolbar.toolbar2 .fa-upload,
-#content7 .toolbar.toolbar2 .fa-upload,
-#content2 .toolbar.toolbar3 .fa-upload,
-#content3 .toolbar.toolbar3 .fa-upload,
-#content4 .toolbar.toolbar3 .fa-upload,
-#content6 .toolbar.toolbar3 .fa-upload,
-#content7 .toolbar.toolbar3 .fa-upload {
-  padding: 0;
-  margin: 0;
-  width: 20px;
-  font-size: 14pt;
-}
-#content2 .toolbar #zoomInMore,
-#content3 .toolbar #zoomInMore,
-#content4 .toolbar #zoomInMore,
-#content6 .toolbar #zoomInMore,
-#content7 .toolbar #zoomInMore,
-#content2 .toolbar #zoomOutMore,
-#content3 .toolbar #zoomOutMore,
-#content4 .toolbar #zoomOutMore,
-#content6 .toolbar #zoomOutMore,
-#content7 .toolbar #zoomOutMore,
-#content2 .toolbar #zoomBackOut,
-#content3 .toolbar #zoomBackOut,
-#content4 .toolbar #zoomBackOut,
-#content6 .toolbar #zoomBackOut,
-#content7 .toolbar #zoomBackOut,
-#content2 .toolbar #zoomBackIn,
-#content3 .toolbar #zoomBackIn,
-#content4 .toolbar #zoomBackIn,
-#content6 .toolbar #zoomBackIn,
-#content7 .toolbar #zoomBackIn,
-#content2 .toolbar #zoomBackBackOut,
-#content3 .toolbar #zoomBackBackOut,
-#content4 .toolbar #zoomBackBackOut,
-#content6 .toolbar #zoomBackBackOut,
-#content7 .toolbar #zoomBackBackOut,
-#content2 .toolbar #zoomBackBackIn,
-#content3 .toolbar #zoomBackBackIn,
-#content4 .toolbar #zoomBackBackIn,
-#content6 .toolbar #zoomBackBackIn,
-#content7 .toolbar #zoomBackBackIn {
-  display: none;
-}
-#content2 .toolbar #zoomInMore.disabled,
-#content3 .toolbar #zoomInMore.disabled,
-#content4 .toolbar #zoomInMore.disabled,
-#content6 .toolbar #zoomInMore.disabled,
-#content7 .toolbar #zoomInMore.disabled,
-#content2 .toolbar #zoomOutMore.disabled,
-#content3 .toolbar #zoomOutMore.disabled,
-#content4 .toolbar #zoomOutMore.disabled,
-#content6 .toolbar #zoomOutMore.disabled,
-#content7 .toolbar #zoomOutMore.disabled,
-#content2 .toolbar #zoomBackOut.disabled,
-#content3 .toolbar #zoomBackOut.disabled,
-#content4 .toolbar #zoomBackOut.disabled,
-#content6 .toolbar #zoomBackOut.disabled,
-#content7 .toolbar #zoomBackOut.disabled,
-#content2 .toolbar #zoomBackIn.disabled,
-#content3 .toolbar #zoomBackIn.disabled,
-#content4 .toolbar #zoomBackIn.disabled,
-#content6 .toolbar #zoomBackIn.disabled,
-#content7 .toolbar #zoomBackIn.disabled,
-#content2 .toolbar #zoomBackBackOut.disabled,
-#content3 .toolbar #zoomBackBackOut.disabled,
-#content4 .toolbar #zoomBackBackOut.disabled,
-#content6 .toolbar #zoomBackBackOut.disabled,
-#content7 .toolbar #zoomBackBackOut.disabled,
-#content2 .toolbar #zoomBackBackIn.disabled,
-#content3 .toolbar #zoomBackBackIn.disabled,
-#content4 .toolbar #zoomBackBackIn.disabled,
-#content6 .toolbar #zoomBackBackIn.disabled,
-#content7 .toolbar #zoomBackBackIn.disabled {
-  background-color: rgba(58, 69, 81, 0.2);
-  color: rgba(58, 69, 81, 0.2);
-  pointer-events: none;
-}
-#content2 .toolbar .zoom-button,
-#content3 .toolbar .zoom-button,
-#content4 .toolbar .zoom-button,
-#content6 .toolbar .zoom-button,
-#content7 .toolbar .zoom-button {
-  float: right;
-  clear: both;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 2px solid rgba(188, 191, 193, 0.2);
-  width: 40px;
-  height: 40px;
-  border-radius: 25px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  padding: 10px;
-  color: #3a4551;
-  font-family: 'Gotham-Book';
-  font-size: 18pt;
-  line-height: .8;
-  transition: all 0.5s ease;
-}
-#content2 .toolbar .zoom-button:hover,
-#content3 .toolbar .zoom-button:hover,
-#content4 .toolbar .zoom-button:hover,
-#content6 .toolbar .zoom-button:hover,
-#content7 .toolbar .zoom-button:hover {
-  border-color: rgba(58, 69, 81, 0.8);
-  color: rgba(255, 255, 255, 0.8);
-  background-color: #3a4551;
-  cursor: pointer;
-}
-#content2 .toolbar .zoom-button.zoomOut-button,
-#content3 .toolbar .zoom-button.zoomOut-button,
-#content4 .toolbar .zoom-button.zoomOut-button,
-#content6 .toolbar .zoom-button.zoomOut-button,
-#content7 .toolbar .zoom-button.zoomOut-button {
-  font-size: 22pt !important;
-  line-height: .6;
-  padding: 10px 12px !important;
-}
-#content2 footer,
-#content3 footer,
-#content4 footer,
-#content6 footer,
-#content7 footer {
-  display: block;
-}
-#content2 footer#bottom-nav div#button-div,
-#content3 footer#bottom-nav div#button-div,
-#content4 footer#bottom-nav div#button-div,
-#content6 footer#bottom-nav div#button-div,
-#content7 footer#bottom-nav div#button-div {
-  margin-top: 0px;
-}
-#content2 footer div#button-div,
-#content3 footer div#button-div,
-#content4 footer div#button-div,
-#content6 footer div#button-div,
-#content7 footer div#button-div {
-  margin-top: -15px;
-}
-#content2 footer #begin-assessment,
-#content3 footer #begin-assessment,
-#content4 footer #begin-assessment,
-#content6 footer #begin-assessment,
-#content7 footer #begin-assessment,
-#content2 footer #back-to-login,
-#content3 footer #back-to-login,
-#content4 footer #back-to-login,
-#content6 footer #back-to-login,
-#content7 footer #back-to-login {
-  margin-top: 0;
 }
 .clock.flip-clock-wrapper {
   right: -380px !important;
@@ -412,18 +131,131 @@ a.disabled .progress-btn.btn {
   padding: 7px 8px;
   margin: 4px 8px;
 }
+.audio-record-placeholder {
+  background-color: rgba(188, 191, 193, 0.6);
+  border-radius: 6px;
+  position: relative;
+  width: 10
+	0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.audio-record-placeholder span.time {
+  float: left;
+  padding-left: 10px;
+  font-family: "Gotham-Medium";
+}
+.audio-record-placeholder a.text-link.record-button {
+  padding-left: 10px;
+}
+@media screen and (max-width: 400px) {
+  .audio-record-placeholder a.text-link.record-button {
+    margin-left: -40px;
+  }
+}
+.audio-record-placeholder .record-button {
+  background-color: rgba(58, 69, 81, 0.1);
+  padding: 6px 8px;
+  border-radius: 3px;
+  display: inline-block;
+  float: left;
+  margin-top: -5px;
+  margin-right: 20px;
+  min-width: 90px;
+}
+.audio-record-placeholder .record-button:hover {
+  background-color: #ed5454;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.audio-record-placeholder .record-button:hover span {
+  opacity: .8;
+}
+.audio-record-placeholder .recording-bar {
+  background-color: rgba(58, 69, 81, 0.6);
+  height: 24px;
+  width: 100%;
+  float: left;
+  position: relative;
+  border-radius: 3px;
+}
+.audio-record-placeholder .recording-bar .progress {
+  display: inline-block;
+  height: 24px;
+  width: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ed5454;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 600px) {
+  .audio-record-placeholder .recording-bar {
+    margin-right: -40px;
+    float: right;
+  }
+}
+.audio-record-placeholder .audio-button,
+.audio-record-placeholder .mute-button {
+  float: right;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 2px 12px;
+  background-color: rgba(188, 191, 193, 0.6);
+  border-radius: 6px;
+}
+.audio-record-placeholder .audio-button:hover,
+.audio-record-placeholder .mute-button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(58, 69, 81, 0.4);
+}
+.audio-response .settings-link {
+  position: absolute;
+  top: -40px;
+  right: -30px;
+  width: 80px;
+  top: -80px;
+}
+@media screen and (max-width: 992px) {
+  .audio-response .settings-link {
+    margin-top: -90px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .audio-response .panel .panel-body {
+    padding: 0;
+  }
+  .audio-response .record-button {
+    margin-left: -20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .audio-response .panel {
+    min-height: 450px;
+  }
+  .audio-response .audio-record-placeholder {
+    margin-top: 80px;
+  }
+}
+.audio-response .mute-button {
+  display: none;
+}
 .video-record-placeholder {
   background-color: #3a4551;
   border-radius: 6px;
   position: relative;
   width: 100%;
-  height: 300px;
+  min-height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1400px) {
   .video-record-placeholder {
-    min-height: 500px;
+    min-height: 300px;
   }
 }
 .video-record-placeholder .text-link {
@@ -510,8 +342,31 @@ td.filter.mypool-status-filter {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
+.welcome-container #content .panel {
+  padding-bottom: 60px;
+}
+.assessment-complete .large-text {
+  font-size: 18pt;
+  display: block;
+}
+.assessment-complete .panel {
+  padding-bottom: 60px;
+}
+.assessment-complete .option-subheader {
+  padding-top: 60px;
+  font-size: 16pt;
+}
+.assessment-complete p {
+  margin-left: -10px;
+}
 .app-content {
   min-height: 100vh;
+}
+.app-content.mypool {
+  margin-right: 20px;
+}
+.activity-table {
+  margin-right: 10px !important;
 }
 #import-window {
   z-index: 200000;
@@ -1046,7 +901,7 @@ footer.sub-bottom-nav {
 .person-large,
 .person-small,
 .person-xsmall,
-#assess-intro #button-div button,
+a #assess-intro #button-div button,
 #content .notifications .panel.activities-widget ul.activities-list .activities-item .activities-desc.amazon-bug-left:before,
 #content .notifications .panel.activities-widget .panel-footer a,
 .myjobs-hub .panel-footer a {
@@ -1570,7 +1425,7 @@ header h2 {
 }
 @media screen and (max-width: 400px) {
   div#content.assessment-container {
-    margin-top: 220px;
+    margin-top: 0px;
   }
 }
 /*********** Remove small-logo functionality *************/
@@ -3106,14 +2961,47 @@ span.login-text {
     line-height: 1em;
   }
 }
+/* this is hacky and should be reviewed */
 .applicant-assessment {
+  margin-top: 12.5%;
+}
+.applicant-assessment.multiple-choice-container .answer-col span {
+  margin: 0 10px 0 0;
+}
+.applicant-assessment.video-question-container {
+  margin-top: 8%;
+}
+.applicant-assessment.video-question-container .mute-button {
+  display: none;
+  float: right;
+  height: 25px;
+}
+@media screen and (max-width: 800px) {
+  .applicant-assessment.video-question-container button.hint-button {
+    margin-top: -50px !important;
+  }
+  .applicant-assessment.video-question-container .panel {
+    margin-top: 90px !important;
+  }
+  .applicant-assessment.video-question-container #video-question .text-link {
+    margin: 0px 4px;
+  }
+}
+.applicant-assessment.video-question-container .panel {
   margin-top: 60px;
+}
+.applicant-assessment.welcome-container {
+  min-height: 300px;
 }
 .applicant-assessment hr {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: -40px;
   margin-right: -40px;
+}
+.multiple-choice .panel,
+.audio-response .panel {
+  margin-top: 60px;
 }
 .applicant-qualify,
 .applicant-assessment {
@@ -3146,7 +3034,7 @@ span.login-text {
   width: 30px;
   height: 30px;
   right: 30px;
-  top: 30px;
+  top: 20px;
   background-image: url('../img/icons/confirm-icon.png');
   background-size: 30px 30px;
 }
@@ -3159,6 +3047,10 @@ span.login-text {
   display: inline-block;
   height: 35px;
   border-radius: 4px !important;
+}
+.applicant-qualify button.hint-button span.fa.fa-gears,
+.applicant-assessment button.hint-button span.fa.fa-gears {
+  padding-right: 5px;
 }
 .applicant-qualify button.hint-button p,
 .applicant-assessment button.hint-button p {
@@ -3173,13 +3065,7 @@ span.login-text {
 @media screen and (max-width: 600px) {
   .applicant-qualify button.hint-button,
   .applicant-assessment button.hint-button {
-    margin-top: -55px !important;
-  }
-}
-@media screen and (min-width: 600px) {
-  .applicant-qualify button.hint-button,
-  .applicant-assessment button.hint-button {
-    margin-top: -40px !important;
+    margin-top: -45px !important;
   }
 }
 .applicant-qualify button.hint-button .fa-clock-o,
@@ -3195,12 +3081,6 @@ span.login-text {
   line-height: 2.2em;
   display: inline-block;
   padding-left: 10px;
-}
-@media screen and (max-width: 600px) {
-  .applicant-qualify .response-row,
-  .applicant-assessment .response-row {
-    margin-top: 40px;
-  }
 }
 @media screen and (min-width: 600px) {
   .applicant-qualify .response-row,
@@ -3323,7 +3203,6 @@ span.login-text {
 .panel .lin-icon {
   margin-left: 50%;
   transform: translate(-50%);
-  min-width: 70%;
 }
 .panel p {
   font-size: 12pt;
@@ -3556,37 +3435,29 @@ span.login-text {
 /********************************************************************************
 								APPLICANT ASSESS
 ********************************************************************************/
-#content.long-answer-window {
+.text-response {
   width: 100vw;
   height: 100vh;
 }
-#content.long-answer-window #long-answer-input {
-  margin-top: 14% !important;
-}
-#content.long-answer-window #long-answer-input .panel {
-  min-height: 370px;
-}
-#content.long-answer-window #long-answer-input .panel-header {
-  margin-top: 40px !important;
-}
-#content.long-answer-window #long-answer-input #bottom-nav {
+.text-response #long-answer-input #bottom-nav {
   display: block;
   position: a;
   left: 0;
   bottom: 0;
 }
-#content.long-answer-window #long-answer-input textarea {
+.text-response #long-answer-input textarea {
   width: 75%;
   margin-left: 50%;
   transform: translate(-50%);
   min-height: 200px;
-  margin-bottom: -50px;
+  margin-bottom: 0px;
   margin-top: 20px;
+  border: 2px groove rgba(58, 69, 81, 0.4);
 }
-#content.long-answer-window footer {
+.text-response footer {
   display: block;
 }
-#content.long-answer-window footer #button-div {
+.text-response footer #button-div {
   margin-top: 0px;
 }
 #content7 {
@@ -4554,6 +4425,10 @@ button#done-assess {
   position: fixed;
   z-index: 80000000;
 }
+.question-row.answers {
+  margin-top: -20px;
+  display: none;
+}
 @media screen and (min-width: 600px) {
   .question-row {
     padding: 20px 40px;
@@ -4569,8 +4444,67 @@ button#done-assess {
 }
 .question-col {
   font-size: 18pt;
-  margin-bottom: 20px;
-  margin-left: 20px;
+}
+.question-col.info-col {
+  min-width: 120px;
+}
+.question-col.toggle {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+.question-col .action-icon {
+  display: inline-block;
+  max-width: 30px;
+  padding: 1px;
+  float: right;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.question-col .action-icon:first-child {
+  margin-left: 5px;
+}
+.question-col .question-text {
+  font-size: 14pt;
+}
+.question-col .question-text,
+.question-col .question-number,
+.question-col .question-type {
+  display: inline-block;
+  padding: 10px;
+  float: left;
+}
+.question-col .question-type {
+  max-width: 70px;
+}
+.publish-assessment-notice .panel {
+  padding-bottom: 60px;
+}
+.publish-assessment-notice .panel .panel-body {
+  padding-top: 60px;
+}
+.panel .panel-body p.assessment-name,
+.panel .panel-body p.subtitle {
+  padding: 4px;
+  background: rgba(58, 69, 81, 0.1);
+  padding-left: 20px;
+}
+.panel .panel-body p.assessment-name {
+  color: rgba(58, 69, 81, 0.8);
+}
+@media screen and (min-width: 600px) {
+  .panel .panel-body p.assessment-name {
+    margin-right: 10px;
+  }
+}
+.panel .panel-body p.subtitle {
+  color: rgba(58, 69, 81, 0.4);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .panel .panel-body p.subtitle {
+    margin-left: 10px;
+  }
 }
 .answer-col {
   font-family: "Gotham-Medium";
@@ -4582,6 +4516,9 @@ button#done-assess {
   border-color: transparent !important;
   background-color: rgba(58, 69, 81, 0.1);
   border-radius: 4px;
+}
+.answer-col.admin {
+  pointer-events: none;
 }
 .answer-col:hover span {
   background-color: rgba(58, 69, 81, 0.2);
@@ -4676,6 +4613,7 @@ button#done-assess {
 }
 .options-component {
   margin-top: 160px;
+  padding-right: 40px;
   width: 100%;
   display: inline-block;
 }
@@ -5486,7 +5424,7 @@ section#create-assess-window .question-table {
 #send-assess .placeholder {
   display: none;
 }
-#mypool-content {
+x #mypool-content {
   padding-right: 20px;
 }
 .jd360-listing {
@@ -5518,29 +5456,49 @@ section#create-assess-window .question-table {
   top: 0;
   padding: 40px;
 }
-#assess-intro {
+a #assess-intro {
   animation-duration: 1.5s;
   animation-name: dropDown;
   transition: all 0.5s ease;
 }
-#assess-intro #button-div button {
+a #assess-intro.panel {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+@media screen and (max-width: 479px) {
+  a #assess-intro {
+    padding: 15px 10px !important;
+  }
+  a #assess-intro .connect-img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 479px) {
+  a #assess-intro #assess-intro {
+    padding: 100px 30px !important;
+  }
+}
+a #assess-intro #button-div {
+  margin-top: 40px;
+}
+a #assess-intro #button-div button {
   padding: 6px 40px;
   font-family: "Gotham-Medium";
 }
-#assess-intro #button-div button.primary {
+a #assess-intro #button-div button.primary {
   color: #ffffff;
 }
-#assess-intro #button-div button.primary:hover {
+a #assess-intro #button-div button.primary:hover {
   color: #ed5454;
 }
-#assess-intro #button-div button.secondary {
+a #assess-intro #button-div button.secondary {
   border-color: rgba(58, 69, 81, 0.6);
 }
-#assess-intro #button-div button.secondary:hover {
+a #assess-intro #button-div button.secondary:hover {
   background-color: rgba(58, 69, 81, 0.6);
   color: #ffffff;
 }
-#assess-intro #button-div button:first-child {
+a #assess-intro #button-div button:first-child {
   margin-right: 20px;
 }
 @keyframes dropDown {
@@ -5554,18 +5512,16 @@ section#create-assess-window .question-table {
   }
 }
 .drop-down {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: dropDown;
   transition: all 0.5s ease;
 }
 @keyframes dropDown {
   0% {
-    position: absolute;
     margin-top: -300px;
   }
   100% {
-    position: absolute;
-    margin-top: 90px;
+    margin-top: 0;
   }
 }
 #jd-confirm-btn,
@@ -6702,11 +6658,11 @@ body.takeover-active {
 span.number-circle {
   width: 35px;
   height: 35px;
-  padding: 10px 12px !important;
+  padding: 10px 12px 10px 10px;
   border-radius: 40px;
   line-height: 1em;
   float: left;
-  margin-top: -4px;
+  margin-top: -3px !important;
   margin-left: 0px;
   background-color: rgba(58, 69, 81, 0.1);
 }

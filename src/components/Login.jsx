@@ -35,7 +35,7 @@ var Login = React.createClass({
                     </div>
 
                     <div className="col-sm-4 col2">
-                     <Link className="applicant-login" to="/applicant-assess">  
+                     <Link className="applicant-login" to="/applicant-assessment">  
                         <div id="user-tile2" className="user-tile user-tile2">
                             <img src="/img/avatars/lin-hex-500x500.png" className="avatar-hex img-responsive" alt="" />
                             <span className="login-name">Lin Park</span>
