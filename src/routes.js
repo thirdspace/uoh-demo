@@ -15,7 +15,6 @@ import PopulateAssessment from './components/CreateAssess/PopulateAssessment';
 import PopulateAssessment2 from './components/CreateAssess/PopulateAssessment2';
 import AssessmentPublish from './components/CreateAssess/AssessmentPublish';
 
-
 import AddQuestion from './components/CreateAssess/AddQuestion';
 import Review from './components/CreateAssess/Review';
 import ApplicantPage from './components/ApplicantPage';
@@ -81,9 +80,7 @@ const routes = (
         <Route path="*" component={NotFoundPage}/>
     </Route>
 
-   
     <Route path="*" component={NotFoundPage}/>
-
 
   </Route>
 );
