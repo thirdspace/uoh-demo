@@ -51,8 +51,8 @@ export default class AssessmentPublish extends React.Component {
                <Link to="/audio-question">
                 <button id="back-to-login" className="progress-btn btn secondary">Back</button>
               </Link>
-              <Link to="/home">
-                <button id="begin-assessment" className="progress-btn btn primary">Publish</button>
+              <Link to="/mypool2">
+                <button className="progress-btn btn primary">Publish</button>
               </Link>
               </div>
               <div className="bottom-nav-right col-xs-1 col-md-3">

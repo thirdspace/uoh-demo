@@ -63,6 +63,7 @@ const routes = (
         <IndexRoute path="/populate-assessment" component={PopulateAssessment} />
         <Route path="/add-question" component={AddQuestion} />
         <Route path="/populate-assessment2" component={PopulateAssessment2} />
+        <Route path="/assessment-publish" component={AssessmentPublish} />
 
         <Route path="*" component={NotFoundPage}/>
     </Route>
