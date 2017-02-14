@@ -16,8 +16,6 @@ import PopulateAssessment2 from './components/CreateAssess/PopulateAssessment2';
 import AssessmentPublish from './components/CreateAssess/AssessmentPublish';
 
 import AddQuestion from './components/CreateAssess/AddQuestion';
-import Review from './components/CreateAssess/Review';
-import ApplicantPage from './components/ApplicantPage';
 
 import AdminSignup from './components/AdminSignup';
 import EmptyPool from './components/MyPool/EmptyPool';
@@ -53,7 +51,6 @@ const routes = (
         <Route path="/home" component={FreshApplicants} />
         <Route path="/mypool2" component={FreshApplicants2} />
         <Route path="/mypool3" component={FreshApplicants3} />
-        <Route path="applicant/:id" component={ApplicantPage}/>
 
         <Route path="*" component={NotFoundPage}/>
     </Route>
