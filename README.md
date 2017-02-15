@@ -34,7 +34,7 @@ Download app zip from google drive:
 https://drive.google.com/open?id=0B6jwW4Gea3jLdFU2SFFiOTBrZVU
 
 Or clone git repository:
-Add link here
+https://github.com/thirdspace/uoh-demo
 
 
 
